@@ -158,7 +158,19 @@
 
     async function renderCalendar(month, year) {
       calendar.innerHTML = "";
-      const notes = await fetchNotes(month, year);
+      const notesRaw = await fetchNotes(month, year);
+      const notes = {};
+
+      // Handle multiple entries per day (comma-separated string or array)
+      for (const [date, note] of Object.entries(notesRaw)) {
+        if (!notes[date]) notes[date] = [];
+        if (Array.isArray(note)) {
+          notes[date] = note;
+        } else {
+          notes[date] = note.split(',').map(n => n.trim());
+        }
+      }
+
       const firstDay = new Date(year, month, 1);
       const lastDay = new Date(year, month + 1, 0);
       const startDay = firstDay.getDay();
@@ -188,16 +200,16 @@
         number.classList.add("calendar-day-number");
         number.textContent = day;
 
-        // Show existing note (read-only)
-        const existingNote = notes[isoDate];
-        if (existingNote) {
-          const label = document.createElement("div");
-          label.classList.add("label");
-          label.textContent = existingNote;
-          dayDiv.appendChild(label);
+        // Show all notes as read-only labels
+        if (notes[isoDate]) {
+          notes[isoDate].forEach(entry => {
+            const label = document.createElement("div");
+            label.classList.add("label");
+            label.textContent = entry;
+            dayDiv.appendChild(label);
+          });
         }
 
-        // Add user entry area
         const textarea = document.createElement("textarea");
         textarea.placeholder = "Enter your name...";
         textarea.style.display = "none";
@@ -217,6 +229,11 @@
               textarea.disabled = true;
               textarea.style.display = "none";
               button.textContent = "Add";
+
+              const label = document.createElement("div");
+              label.classList.add("label");
+              label.textContent = note;
+              dayDiv.insertBefore(label, button);
             }
           }
         });
