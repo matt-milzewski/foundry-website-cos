@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tavern Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e63946;
+    }
+
+    .calendar-controls {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      background-color: #333;
+      border: 1px solid #555;
+    }
+
+    .calendar-day, .calendar-header {
+      background-color: #222;
+      padding: 10px;
+      min-height: 100px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .calendar-header {
+      background-color: #444;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .calendar-day textarea {
+      width: 100%;
+      height: 60px;
+      resize: none;
+      margin-top: 0.5rem;
+      background-color: #111;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      font-family: inherit;
+    }
+
+    .calendar-day-number {
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tavern Calendar</h1>
+  <div class="calendar-controls">
+    <select id="month"></select>
+    <select id="year"></select>
+  </div>
+  <div class="calendar" id="calendar"></div>
+
+  <script>
+    const calendar = document.getElementById("calendar");
+    const monthSelect = document.getElementById("month");
+    const yearSelect = document.getElementById("year");
+    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    const apiEndpoint = "https://1j3keab8uk.execute-api.ap-southeast-2.amazonaws.com/prod"; // Replace with your actual API Gateway URL
+
+    async function fetchNotes(month, year) {
+      try {
+        const response = await fetch(`${apiEndpoint}?month=${month + 1}&year=${year}`);
+        return await response.json();
+      } catch (err) {
+        console.error("Failed to fetch notes:", err);
+        return {};
+      }
+    }
+
+    async function saveNote(date, note) {
+      try {
+        await fetch(apiEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ date: date.toISOString().split("T")[0], note })
+        });
+      } catch (err) {
+        console.error("Failed to save note:", err);
+      }
+    }
+
+    async function renderCalendar(month, year) {
+      calendar.innerHTML = "";
+
+      const notes = await fetchNotes(month, year);
+
+      daysOfWeek.forEach(day => {
+        const header = document.createElement("div");
+        header.classList.add("calendar-header");
+        header.textContent = day;
+        calendar.appendChild(header);
+      });
+
+      const firstDay = new Date(year, month, 1);
+      const lastDay = new Date(year, month + 1, 0);
+      const startDay = firstDay.getDay();
+      const totalDays = lastDay.getDate();
+
+      for (let i = 0; i < startDay; i++) {
+        const empty = document.createElement("div");
+        empty.classList.add("calendar-day");
+        calendar.appendChild(empty);
+      }
+
+      for (let day = 1; day <= totalDays; day++) {
+        const date = new Date(year, month, day);
+        const isoDate = date.toISOString().split("T")[0];
+        const noteValue = notes[isoDate] || "";
+
+        const dayDiv = document.createElement("div");
+        dayDiv.classList.add("calendar-day");
+
+        const number = document.createElement("div");
+        number.classList.add("calendar-day-number");
+        number.textContent = day;
+
+        const textarea = document.createElement("textarea");
+        textarea.value = noteValue;
+        textarea.addEventListener("change", () => saveNote(date, textarea.value));
+
+        dayDiv.appendChild(number);
+        dayDiv.appendChild(textarea);
+        calendar.appendChild(dayDiv);
+      }
+    }
+
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+
+    for (let m = 0; m < 12; m++) {
+      const option = document.createElement("option");
+      option.value = m;
+      option.textContent = new Date(2000, m).toLocaleString("default", { month: "long" });
+      if (m === currentMonth) option.selected = true;
+      monthSelect.appendChild(option);
+    }
+
+    for (let y = currentYear - 5; y <= currentYear + 5; y++) {
+      const option = document.createElement("option");
+      option.value = y;
+      option.textContent = y;
+      if (y === currentYear) option.selected = true;
+      yearSelect.appendChild(option);
+    }
+
+    monthSelect.addEventListener("change", () => {
+      renderCalendar(parseInt(monthSelect.value), parseInt(yearSelect.value));
+    });
+
+    yearSelect.addEventListener("change", () => {
+      renderCalendar(parseInt(monthSelect.value), parseInt(yearSelect.value));
+    });
+
+    renderCalendar(currentMonth, currentYear);
+  </script>
+</body>
+</html>
