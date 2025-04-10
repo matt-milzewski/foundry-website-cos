@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Natural 20 Tavern</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
-
     body {
-      font-family: 'Cinzel', serif;
-      background: radial-gradient(circle, #1a1a1a, #000000);
-      color: #f8f8f8;
+      font-family: 'Georgia', serif;
+      background-color: #0b0b0b;
+      color: #f0f0f0;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
 
     nav {
-      background-color: #111;
-      padding: 1em 2em;
+      background-color: #1a1a1a;
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 10px #000;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 2px solid #e63946;
     }
 
-    nav .logo {
-      font-size: 1.8rem;
-      color: #e63946;
-      text-transform: uppercase;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5em;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      color: #f8f8f8;
+    nav a {
+      color: #f0f0f0;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1rem;
       transition: color 0.3s ease;
     }
 
-    nav ul li a:hover {
+    nav a:hover {
       color: #e63946;
     }
 
     .container {
+      position: relative;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 80vh;
-      text-align: center;
+      z-index: 1;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5em;
-      color: #fff;
-      text-shadow: 2px 2px #e63946;
+      margin-bottom: 0.5rem;
+      color: #e63946;
+      text-shadow: 0 0 10px #000;
     }
 
     p {
       font-size: 1.2rem;
-      margin-bottom: 1.5em;
+      margin-bottom: 2rem;
     }
 
     .btn {
       display: inline-block;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 15px 25px;
+      font-size: 16px;
       color: #fff;
       background-color: #e63946;
       text-decoration: none;
@@ -82,36 +68,42 @@
     }
 
     .btn:hover {
-      background-color: #b02a37;
+      background-color: #c5303a;
     }
 
-    .spooky {
-      font-size: 1.4rem;
-      color: #ccc;
-      max-width: 700px;
-      margin-top: 2em;
-      text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    .fog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: url('https://www.transparenttextures.com/patterns/fog.png') repeat;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+      animation: fadeOut 2s ease-in-out 1.5s forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="fog"></div>
+
   <nav>
-    <div class="logo">The Natural 20 Tavern</div>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/calendar.html">Calendar</a></li>
-      <li><a href="/wiki.html">Wiki</a></li>
-    </ul>
+    <a href="/index.html">Home</a>
+    <a href="/calendar.html">Calendar</a>
+    <a href="/wiki.html">Wiki</a>
   </nav>
 
   <div class="container">
-    <h1>Welcome to The Natural 20 Tavern</h1>
-    <p>Your adventure awaits!</p>
+    <h1>The Natural 20 Tavern</h1>
+    <p>Welcome to Barovia, domain of Lord Strahd von Zarovich...</p>
     <a href="https://foundry.thenatural20tavern.com" class="btn">Enter the Foundry</a>
-    <div class="spooky">
-      <p>Step cautiously, traveler... for you now walk in the shadow of Barovia — domain of the immortal Lord <strong>Strahd von Zarovich</strong>.</p>
-      <p>The mists are thick, the night eternal, and the tavern always has room for one more lost soul...</p>
-    </div>
   </div>
 </body>
 </html>
