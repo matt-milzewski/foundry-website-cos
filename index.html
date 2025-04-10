@@ -11,26 +11,24 @@
       color: #f0f0f0;
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
 
     nav {
       background-color: #1a1a1a;
-      padding: 1rem;
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       gap: 2rem;
       border-bottom: 2px solid #e63946;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      z-index: 10;
-      position: relative;
     }
 
     nav a {
       color: #f0f0f0;
       text-decoration: none;
       font-size: 1.1rem;
-      letter-spacing: 1px;
+      font-family: 'Trebuchet MS', sans-serif;
+      letter-spacing: 0.5px;
       transition: color 0.3s ease;
     }
 
@@ -39,13 +37,11 @@
     }
 
     .container {
-      position: relative;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      z-index: 1;
       text-align: center;
       padding: 2rem;
     }
@@ -80,32 +76,9 @@
       background-color: #c5303a;
       transform: scale(1.05);
     }
-
-    .fog {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.4) 100%), url('https://www.transparenttextures.com/patterns/foggy-birds.png') repeat;
-      background-size: cover;
-      z-index: 9999;
-      opacity: 1;
-      animation: fadeOut 2.5s ease-in-out 1s forwards;
-      pointer-events: none;
-    }
-
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="fog"></div>
-
   <nav>
     <a href="/index.html">Home</a>
     <a href="/calendar.html">Calendar</a>
