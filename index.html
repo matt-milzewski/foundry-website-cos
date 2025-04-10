@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Natural 20 Tavern</title>
   <style>
     body {
@@ -21,12 +21,16 @@
       justify-content: center;
       gap: 2rem;
       border-bottom: 2px solid #e63946;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      z-index: 10;
+      position: relative;
     }
 
     nav a {
       color: #f0f0f0;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
       transition: color 0.3s ease;
     }
 
@@ -42,6 +46,8 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
+      text-align: center;
+      padding: 2rem;
     }
 
     h1 {
@@ -54,6 +60,9 @@
     p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      max-width: 600px;
+      line-height: 1.5;
+      color: #ccc;
     }
 
     .btn {
@@ -64,23 +73,26 @@
       background-color: #e63946;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .btn:hover {
       background-color: #c5303a;
+      transform: scale(1.05);
     }
 
     .fog {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: 100vh;
       width: 100vw;
-      background: url('https://www.transparenttextures.com/patterns/fog.png') repeat;
-      background-color: rgba(0, 0, 0, 0.6);
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.4) 100%), url('https://www.transparenttextures.com/patterns/foggy-birds.png') repeat;
+      background-size: cover;
       z-index: 9999;
-      animation: fadeOut 2s ease-in-out 1.5s forwards;
+      opacity: 1;
+      animation: fadeOut 2.5s ease-in-out 1s forwards;
+      pointer-events: none;
     }
 
     @keyframes fadeOut {
@@ -102,7 +114,7 @@
 
   <div class="container">
     <h1>The Natural 20 Tavern</h1>
-    <p>Welcome to Barovia, domain of Lord Strahd von Zarovich...</p>
+    <p>Welcome, traveler, to Barovia — a land shrouded in mist and ruled by the eternal night. Lord Strahd awaits your arrival...</p>
     <a href="https://foundry.thenatural20tavern.com" class="btn">Enter the Foundry</a>
   </div>
 </body>
