@@ -39,9 +39,12 @@
     .calendar-day, .calendar-header {
       background-color: #222;
       padding: 10px;
-      min-height: 100px;
+      min-height: 120px;
       box-sizing: border-box;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .calendar-header {
@@ -50,23 +53,51 @@
       text-align: center;
     }
 
-    .calendar-day textarea {
-      width: 100%;
-      height: 60px;
-      resize: none;
-      margin-top: 0.5rem;
-      background-color: #111;
-      color: #f0f0f0;
-      border: 1px solid #555;
-      font-family: inherit;
-    }
-
     .calendar-day-number {
       position: absolute;
       top: 5px;
       right: 8px;
       font-size: 0.8rem;
       color: #888;
+    }
+
+    .calendar-day button {
+      background-color: #e63946;
+      border: none;
+      color: white;
+      padding: 5px;
+      font-size: 0.8rem;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .calendar-day button:hover {
+      background-color: #c5303a;
+    }
+
+    .calendar-day textarea {
+      display: none;
+      width: 100%;
+      resize: none;
+      background-color: #111;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      font-family: inherit;
+      margin-top: 0.5rem;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: none;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -77,18 +108,25 @@
     <select id="year"></select>
   </div>
   <div class="calendar" id="calendar"></div>
+  <div id="toast" class="toast">Note submitted!</div>
 
   <script>
     const calendar = document.getElementById("calendar");
     const monthSelect = document.getElementById("month");
     const yearSelect = document.getElementById("year");
     const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const toast = document.getElementById("toast");
 
-    const apiEndpoint = "https://1j3keab8uk.execute-api.ap-southeast-2.amazonaws.com/prod"; // Replace with your actual API Gateway URL
+    const apiEndpoint = "https://1j3keab8uk.execute-api.ap-southeast-2.amazonaws.com/prod"; // Replace with your actual API URL
+
+    function showToast() {
+      toast.style.display = 'block';
+      setTimeout(() => toast.style.display = 'none', 2000);
+    }
 
     async function fetchNotes(month, year) {
       try {
-        const response = await fetch(`${apiEndpoint}?month=${month + 1}&year=${year}`);
+        const response = await fetch(`${apiEndpoint}?month=${String(month + 1).padStart(2, '0')}&year=${year}`);
         return await response.json();
       } catch (err) {
         console.error("Failed to fetch notes:", err);
@@ -103,6 +141,7 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ date: date.toISOString().split("T")[0], note })
         });
+        showToast();
       } catch (err) {
         console.error("Failed to save note:", err);
       }
@@ -110,8 +149,11 @@
 
     async function renderCalendar(month, year) {
       calendar.innerHTML = "";
-
       const notes = await fetchNotes(month, year);
+      const firstDay = new Date(year, month, 1);
+      const lastDay = new Date(year, month + 1, 0);
+      const startDay = firstDay.getDay();
+      const totalDays = lastDay.getDate();
 
       daysOfWeek.forEach(day => {
         const header = document.createElement("div");
@@ -119,11 +161,6 @@
         header.textContent = day;
         calendar.appendChild(header);
       });
-
-      const firstDay = new Date(year, month, 1);
-      const lastDay = new Date(year, month + 1, 0);
-      const startDay = firstDay.getDay();
-      const totalDays = lastDay.getDate();
 
       for (let i = 0; i < startDay; i++) {
         const empty = document.createElement("div");
@@ -134,7 +171,6 @@
       for (let day = 1; day <= totalDays; day++) {
         const date = new Date(year, month, day);
         const isoDate = date.toISOString().split("T")[0];
-        const noteValue = notes[isoDate] || "";
 
         const dayDiv = document.createElement("div");
         dayDiv.classList.add("calendar-day");
@@ -144,11 +180,36 @@
         number.textContent = day;
 
         const textarea = document.createElement("textarea");
-        textarea.value = noteValue;
-        textarea.addEventListener("change", () => saveNote(date, textarea.value));
+        textarea.placeholder = "Enter your name...";
+        textarea.style.display = "none";
+
+        const button = document.createElement("button");
+        button.textContent = notes[isoDate] ? "Submitted" : "Add";
+
+        if (notes[isoDate]) {
+          textarea.value = notes[isoDate];
+          textarea.style.display = "block";
+          textarea.disabled = true;
+        }
+
+        button.addEventListener("click", () => {
+          if (button.textContent === "Add") {
+            textarea.style.display = "block";
+            textarea.disabled = false;
+            button.textContent = "Submit";
+          } else if (button.textContent === "Submit") {
+            const note = textarea.value.trim();
+            if (note) {
+              saveNote(date, note);
+              textarea.disabled = true;
+              button.textContent = "Submitted";
+            }
+          }
+        });
 
         dayDiv.appendChild(number);
         dayDiv.appendChild(textarea);
+        dayDiv.appendChild(button);
         calendar.appendChild(dayDiv);
       }
     }
