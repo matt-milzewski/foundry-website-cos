@@ -86,6 +86,15 @@
       margin-top: 0.5rem;
     }
 
+    .calendar-day .label {
+      font-size: 0.85rem;
+      background-color: #333;
+      padding: 4px 6px;
+      border-radius: 3px;
+      margin-bottom: 4px;
+      border-left: 4px solid #e63946;
+    }
+
     .toast {
       position: fixed;
       bottom: 20px;
@@ -179,18 +188,22 @@
         number.classList.add("calendar-day-number");
         number.textContent = day;
 
+        // Show existing note (read-only)
+        const existingNote = notes[isoDate];
+        if (existingNote) {
+          const label = document.createElement("div");
+          label.classList.add("label");
+          label.textContent = existingNote;
+          dayDiv.appendChild(label);
+        }
+
+        // Add user entry area
         const textarea = document.createElement("textarea");
         textarea.placeholder = "Enter your name...";
         textarea.style.display = "none";
 
         const button = document.createElement("button");
-        button.textContent = notes[isoDate] ? "Submitted" : "Add";
-
-        if (notes[isoDate]) {
-          textarea.value = notes[isoDate];
-          textarea.style.display = "block";
-          textarea.disabled = true;
-        }
+        button.textContent = "Add";
 
         button.addEventListener("click", () => {
           if (button.textContent === "Add") {
@@ -202,7 +215,8 @@
             if (note) {
               saveNote(date, note);
               textarea.disabled = true;
-              button.textContent = "Submitted";
+              textarea.style.display = "none";
+              button.textContent = "Add";
             }
           }
         });
