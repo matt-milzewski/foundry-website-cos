@@ -4,14 +4,6 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url('parchment-background.jpg'); /* Replace with an actual image path */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 nav {
@@ -39,6 +31,13 @@ nav a:hover {
 
 .container {
   padding: 2rem;
+}
+
+.book-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
 .book {
