@@ -1,0 +1,82 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  border-bottom: 2px solid #e63946;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+  text-shadow: 0 0 10px #000;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tablinks {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tablinks:hover {
+  background-color: #333;
+}
+
+.tablinks.active {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabcontent h2 {
+  margin-top: 0;
+}
+
+.tabcontent p {
+  margin: 1rem 0;
+}
