@@ -57,6 +57,14 @@ test("next session shows QLD and VIC times, RSVP toggles and clears", async ({ p
   await expect(page.locator("#foundry-status")).toContainText("Offline");
 });
 
+test("the schedule is published for the reminder job", async ({ request }) => {
+  const res = await request.get("/schedule.json");
+  expect(res.ok()).toBeTruthy();
+  const s = await res.json();
+  expect(s.players).toEqual(["Danny", "Fraser", "Ryan", "Stefan"]);
+  expect(s.regular.time).toMatch(/^\d\d:\d\d$/);
+});
+
 test("a failed save rolls back and says so", async ({ page }) => {
   await page.clock.setFixedTime(new Date("2026-11-07T00:00:00Z"));
   await page.route(/execute-api/, (r) =>
