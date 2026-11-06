@@ -2,8 +2,8 @@
   "timezone": "Australia/Brisbane",
   "regular": { "weekday": 1, "time": "20:00" },
   "overrides": [
-    { "date": "2026-11-08", "time": "20:00", "note": "Sunday this week" }
+    { "date": "2026-11-11", "time": "19:00", "note": "Wednesday this week" }
   ],
-  "cancelled": [],
+  "cancelled": ["2026-11-09"],
   "players": ["Danny", "Fraser", "Ryan", "Stefan"]
 }

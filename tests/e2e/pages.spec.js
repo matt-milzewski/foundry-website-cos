@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 const pages = ["/", "/chronicle/", "/chronicle/session-01/", "/codex/", "/players/", "/in-memoriam/", "/campaigns/", "/404.html"];
 
 async function mockApis(page, { status = { active: true, world: "curse-of-strahd", users: 3 } } = {}) {
-  await page.route(/execute-api/, (r) => r.fulfill({ json: { session: "2026-11-08", answers: { Danny: "yes" } } }));
+  await page.route(/execute-api/, (r) => r.fulfill({ json: { session: "2026-11-11", answers: { Danny: "yes" } } }));
   await page.route(/api\/status/, (r) => r.fulfill({ json: status }));
 }
 
@@ -36,14 +36,14 @@ test("next session shows QLD and VIC times, RSVP toggles and clears", async ({ p
       sent.push(b);
       return r.fulfill({ json: { session: b.session, answers: b.answer === "clear" ? {} : { [b.player]: b.answer } } });
     }
-    return r.fulfill({ json: { session: "2026-11-08", answers: {} } });
+    return r.fulfill({ json: { session: "2026-11-11", answers: {} } });
   });
   await page.route(/api\/status/, (r) => r.fulfill({ status: 500, body: "" }));
   await page.goto("/");
   const next = page.locator("#next-session");
-  await expect(next).toContainText("Sunday 8 Nov");
-  await expect(next).toContainText("8:00 pm QLD");
-  await expect(next).toContainText("9:00 pm VIC");
+  await expect(next).toContainText("Wednesday 11 Nov");
+  await expect(next).toContainText("7:00 pm QLD");
+  await expect(next).toContainText("8:00 pm VIC");
   const up = page.getByRole("button", { name: "Fraser is in" });
   await up.click();
   await expect(up).toHaveAttribute("aria-pressed", "true");
@@ -51,8 +51,8 @@ test("next session shows QLD and VIC times, RSVP toggles and clears", async ({ p
   await up.click();
   await expect(up).toHaveAttribute("aria-pressed", "false");
   expect(sent.map((s) => [s.session, s.player, s.answer])).toEqual([
-    ["2026-11-08", "Fraser", "yes"],
-    ["2026-11-08", "Fraser", "clear"],
+    ["2026-11-11", "Fraser", "yes"],
+    ["2026-11-11", "Fraser", "clear"],
   ]);
   await expect(page.locator("#foundry-status")).toContainText("Offline");
 });
@@ -60,7 +60,7 @@ test("next session shows QLD and VIC times, RSVP toggles and clears", async ({ p
 test("a failed save rolls back and says so", async ({ page }) => {
   await page.clock.setFixedTime(new Date("2026-11-07T00:00:00Z"));
   await page.route(/execute-api/, (r) =>
-    r.request().method() === "PUT" ? r.fulfill({ status: 500, body: "" }) : r.fulfill({ json: { session: "2026-11-08", answers: {} } })
+    r.request().method() === "PUT" ? r.fulfill({ status: 500, body: "" }) : r.fulfill({ json: { session: "2026-11-11", answers: {} } })
   );
   await page.route(/api\/status/, (r) => r.fulfill({ json: { active: false } }));
   await page.goto("/");
