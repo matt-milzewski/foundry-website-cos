@@ -57,6 +57,25 @@ test("next session shows QLD and VIC times, RSVP toggles and clears", async ({ p
   await expect(page.locator("#foundry-status")).toContainText("Offline");
 });
 
+test("an open page moves the banner and RSVPs to the next session the moment one starts", async ({ page }) => {
+  const asked = [];
+  await page.clock.install({ time: new Date("2026-11-11T08:59:30Z") }); // Wed 6:59:30 pm QLD
+  await page.route(/execute-api/, (r) => {
+    const session = new URL(r.request().url()).searchParams.get("session");
+    asked.push(session);
+    return r.fulfill({ json: { session, answers: {} } });
+  });
+  await page.route(/api\/status/, (r) => r.fulfill({ json: { active: false } }));
+  await page.goto("/");
+  const next = page.locator("#next-session");
+  await expect(next).toContainText("Wednesday 11 Nov");
+  await page.clock.fastForward(60_000); // past 7:00 pm, the banner rechecks every 30 seconds
+  await expect(next).toContainText("Monday 16 Nov");
+  await expect(next).toContainText("8:00 pm QLD");
+  await expect(next).not.toContainText("Wednesday this week");
+  await expect.poll(() => asked).toContain("2026-11-16");
+});
+
 test("the schedule is published for the reminder job", async ({ request }) => {
   const res = await request.get("/schedule.json");
   expect(res.ok()).toBeTruthy();
