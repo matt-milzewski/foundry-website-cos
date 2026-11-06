@@ -1,0 +1,22 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: r
+permalink: "{{ r.from }}"
+redirects:
+  - { from: "/calendar.html", to: "/#next" }
+  - { from: "/wiki.html", to: "/codex/" }
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <title>Moved</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ r.to }}">
+  <link rel="canonical" href="{{ r.to }}">
+</head>
+<body><p>This page has moved to <a href="{{ r.to }}">{{ r.to }}</a>.</p></body>
+</html>

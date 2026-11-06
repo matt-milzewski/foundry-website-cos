@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: In Memoriam
+permalink: /in-memoriam/
+description: The heroes Barovia kept, and the allies who fell beside them.
+---
+{% from "partials/portrait.njk" import portrait %}
+<header class="page-head wrap">
+  <span class="eyebrow">Barovia keeps what it takes</span>
+  <h1>In Memoriam</h1>
+  <div class="candles" aria-hidden="true"><span class="candle"></span><span class="candle"></span><span class="candle"></span></div>
+  <p class="memoriam-intro">For the heroes who walked into the mists and didn't walk out, and the ones who left the road early.</p>
+</header>
+
+<div class="wrap">
+  {% set fallen = characters | byStatus("dead", "retired") | sort(false, false, "fate_session") %}
+  <section class="grid grid--3" aria-label="Fallen and retired heroes">
+    {% for c in fallen %}
+    <article class="tomb" tabindex="0">
+      {{ portrait(c.character, c.portrait, "lg") }}
+      <h3>{{ c.character }}</h3>
+      <span class="tomb__years">{{ c.player }} · Sessions {{ c.first_session }}–{{ c.last_session }}</span>
+      {% if c.epitaph %}<p class="tomb__epitaph">{{ c.epitaph }}</p>{% endif %}
+      {% if c.fate %}<p class="tomb__fate">{{ c.fate }}</p>{% endif %}
+      {% if c.last_words %}<p class="tomb__words">Last words: “{{ c.last_words }}”</p>{% endif %}
+      {% if c.killed_by %}<p class="tomb__note">Felled by {{ c.killed_by }}{% if c.fate_session %} · <a href="{{ c.fate_session | sessionUrl }}">Session {{ c.fate_session }}</a>{% endif %}</p>{% elif c.fate_session %}<p class="tomb__note"><a href="{{ c.fate_session | sessionUrl }}">Session {{ c.fate_session }}</a></p>{% endif %}
+      {% if c.brought_back %}<p class="tomb__note">{{ c.brought_back }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </section>
+
+  {% if alliesLost.length %}
+  <section class="section">
+    <h2 class="section-title">Allies we lost</h2>
+    <div class="grid grid--2">
+      {% for a in alliesLost %}
+      <article class="card">
+        <h3>{{ a.name }}</h3>
+        <p>{{ a.who }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section">
+    <h2 class="section-title">The record</h2>
+    <div class="records">
+      <div class="card">
+        <h3>Villains defeated</h3>
+        <ol>{% for v in records.villains_defeated %}<li>{{ v.name }} <span class="muted">· <a href="{{ v.session | sessionUrl }}">Session {{ v.session }}</a></span></li>{% endfor %}</ol>
+      </div>
+      <div class="card">
+        <h3>Biggest fights</h3>
+        <ul>{% for f in records.biggest_fights %}<li><strong>{{ f.name }}</strong> <span class="muted">(Session {{ f.session }})</span><br>{{ f.why }}</li>{% endfor %}</ul>
+      </div>
+      <div class="card">
+        <h3>Closest calls</h3>
+        <ul>{% for c in records.closest_calls %}<li>{{ c.what }} <span class="muted">(Session {{ c.session }})</span></li>{% endfor %}</ul>
+      </div>
+    </div>
+  </section>
+</div>

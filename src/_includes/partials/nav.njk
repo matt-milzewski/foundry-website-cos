@@ -1,0 +1,20 @@
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="/" aria-label="{{ site.title }}, home">
+      <svg class="brand__die" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9.5v13L16 30 3 22.5v-13Z M16 2 9 13h14Z M9 13l-6-3.5M23 13l6-3.5M9 13l7 17 7-17M3 22.5 9 13M29 22.5 23 13"/></svg>
+      <span class="brand__name">The Natural 20 Tavern</span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        {% for item in site.nav %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url or (item.url != "/" and page.url.startsWith(item.url)) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+        <li class="site-nav__cta"><a class="btn btn--small" href="{{ site.foundryUrl }}">Enter the Foundry</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

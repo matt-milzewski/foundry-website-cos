@@ -1,0 +1,71 @@
+# Optional: lets GitHub Actions deploy without stored AWS keys.
+# This changes account permissions, so deploy it yourself:
+#   aws cloudformation deploy --stack-name natural20tavern-deploy-role \
+#     --template-file infra/github-oidc.yaml --capabilities CAPABILITY_NAMED_IAM
+# If your account already has a GitHub OIDC provider, add:
+#   --parameter-overrides ExistingProviderArn=arn:aws:iam::622842579488:oidc-provider/token.actions.githubusercontent.com
+# Then in .github/workflows/deploy.yaml swap the two key lines for:
+#   role-to-assume: <RoleArn output>
+# add "id-token: write" under permissions, and delete the old key secrets.
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: GitHub OIDC deploy role for thenatural20tavern.com
+
+Parameters:
+  ExistingProviderArn:
+    Type: String
+    Default: ""
+  Repo:
+    Type: String
+    Default: matt-milzewski/foundry-website-cos
+  BucketName:
+    Type: String
+    Default: thenatural20tavern.com
+  DistributionId:
+    Type: String
+    Default: E32CDK4TJQ6G1I
+
+Conditions:
+  CreateProvider: !Equals [!Ref ExistingProviderArn, ""]
+
+Resources:
+  GitHubProvider:
+    Type: AWS::IAM::OIDCProvider
+    Condition: CreateProvider
+    Properties:
+      Url: https://token.actions.githubusercontent.com
+      ClientIdList: [sts.amazonaws.com]
+
+  DeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: natural20tavern-deploy
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !If [CreateProvider, !Ref GitHubProvider, !Ref ExistingProviderArn]
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Sub repo:${Repo}:ref:refs/heads/main
+      Policies:
+        - PolicyName: deploy-site
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !Sub arn:aws:s3:::${BucketName}
+              - Effect: Allow
+                Action: [s3:PutObject, s3:DeleteObject]
+                Resource: !Sub arn:aws:s3:::${BucketName}/*
+              - Effect: Allow
+                Action: cloudfront:CreateInvalidation
+                Resource: !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/${DistributionId}
+
+Outputs:
+  RoleArn:
+    Value: !GetAtt DeployRole.Arn

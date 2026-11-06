@@ -1,0 +1,137 @@
+[
+  {
+    "session": 31,
+    "date": null,
+    "title": "A Dragon Over Berez",
+    "recap": "The Weaver gave Korino a vial tied to a thread of fate, and the party set out for the flooded ruins of Berez. A skeletal dragon with a pulsing green-black heart flew overhead, carrying an older woman who laughed and said the party was doing her work for her. The boneclaw and its mastiffs ambushed them in the ruins, and the dragon swept back to breathe poison over the party.",
+    "location": "Vistani camp and the ruins of Berez",
+    "npcs": ["The Weaver", "Vasili", "Baba Yaga", "The skeletal dragon", "The boneclaw", "The shadow mastiffs"],
+    "highlight": "The party drove off the boneclaw, then looked up into the dragon's poison breath."
+  },
+  {
+    "session": 32,
+    "date": null,
+    "title": "One Log at a Time",
+    "recap": "The party survived the dragon's poison breath and sheltered in a Tiny Hut to recover. On the way to the fane, they picked their way across logs through swamp water while will-o'-wisps and vine blights wore them down. Azza noticed the dragon slipping into the Ethereal Plane before it circled back and a fireball hit the party.",
+    "location": "Berez swamp, on the approach to the fane",
+    "npcs": ["The skeletal dragon", "Will-o'-wisps", "Vine blights"],
+    "highlight": "Azza spotted the dragon crossing into the Ethereal Plane while the party was still struggling to cross the bog."
+  },
+  {
+    "session": 33,
+    "date": null,
+    "title": "The House Grew Legs",
+    "recap": "The Weaver drew the party into her domain and gave each of them a piece of gold that covered them in protective magic. Back at the fane, the house sprouted chicken legs and lashed out with branches while the dragon guarded the tree. The Weaver helped destroy the dragon, but the party went down in the fighting, and Zarcharus gave up his life to let his soul pass beyond the mists.",
+    "location": "The Weaver's domain and the fane at Berez",
+    "npcs": ["The Weaver", "Baba Yaga", "The skeletal dragon", "The walking house", "Konshu"],
+    "highlight": "Hrulek reached for a potion he'd stolen from Strahd and discovered it was a mimic."
+  },
+  {
+    "session": 34,
+    "date": null,
+    "title": "One Roll to Save the Fane",
+    "recap": "Korino got back up on a natural 20 and crawled to the fane, restoring it with Baba Yaga standing over him. Vasili revealed himself as Strahd, struck Hrulek, beheaded Baba Yaga, and took Ireena. The party met Roger and Lucy amid the chaos, and Lucy heard Argynvost's voice when the Sunsword came into contact with the dead dragon's skull.",
+    "location": "The fane at Berez",
+    "npcs": ["Baba Yaga", "Strahd", "Ireena", "Argynvost"],
+    "highlight": "Korino rolled a natural 20 and reached the fane from the ground."
+  },
+  {
+    "session": 35,
+    "date": null,
+    "title": "Snow on the Road to Krezk",
+    "recap": "The party passed the winery as the temperature dropped and snow began to fall. They learned that Argynvost had defended the land against Strahd and that his old stronghold might offer a way to restore him. At Krezk, Korino spoke for the group despite notices naming Azza and Hrulek, and the burgomaster received them at his manor.",
+    "location": "Road to Krezk and the burgomaster's manor",
+    "npcs": ["Godfrey", "The Weaver", "Burgomaster Boris"],
+    "highlight": "Korino got the party into Krezk even though two of them were wanted."
+  },
+  {
+    "session": 36,
+    "date": null,
+    "title": "A Feast and a Warning",
+    "recap": "Burgomaster Boris fed the party and asked for help. They met Elliot, the courier Arik, and Kasimir, who told them he wanted revenge on Rahadin for killing his family. After hearing troubling reports about the Abbot's work, the party picked up supplies and a cart before heading to the abbey.",
+    "location": "Krezk",
+    "npcs": ["Burgomaster Boris", "Elliot", "Arik", "Kasimir", "Donny", "Boondaego"],
+    "highlight": "The dusk elf the party feared might be Rahadin turned out to be Kasimir, who wanted Rahadin dead."
+  },
+  {
+    "session": 37,
+    "date": null,
+    "title": "The Abbot's Test",
+    "recap": "The party met the Abbot and heard that he would grant the Sunsword's full power to someone who passed his test. Roger found stairs behind the altar before the Abbot used a command spell to force him out. The Abbot spoke of an army and further sacrifices, so the party decided to investigate after dark.",
+    "location": "Abbey of Saint Markovia, Krezk",
+    "npcs": ["The Abbot", "The abbey's attendants"],
+    "highlight": "Roger found a staircase behind the altar before the Abbot ordered him out by magic."
+  },
+  {
+    "session": 38,
+    "date": null,
+    "title": "Scales in the Cellar",
+    "recap": "The party slipped back into the abbey at night and found the Abbot performing a ritual downstairs. Lucy took a blast rather than let Argynvost's soul be pulled from the Sunsword, and spectral scales appeared on her after she hit the wall. The Abbot raised a Wall of Force, and the party fought to weaken him enough for the sword to take his soul.",
+    "location": "Cellars beneath the Abbey of Saint Markovia",
+    "npcs": ["The Abbot", "Argynvost", "The abbey's attendants"],
+    "highlight": "Lucy put herself in the path of the blast to keep Argynvost in the sword."
+  },
+  {
+    "session": 39,
+    "date": null,
+    "title": "The Sword Took the Abbot",
+    "recap": "Celestial spirits joined the fight as the abbey started collapsing overhead. Korino broke the Abbot's tether, Roger blasted him back into the stairs, and a final counterspell stopped a sphere of death before the Sunsword consumed him. Lucy used Misty Step to snatch the sword back from Roger, and the party ran for the exit.",
+    "location": "Abbey of Saint Markovia, Krezk",
+    "npcs": ["The Abbot", "The celestial spirits"],
+    "highlight": "The Sunsword flared with the brightest light Roger had ever seen."
+  },
+  {
+    "session": 40,
+    "date": null,
+    "title": "Ram the Vampire Swarm",
+    "recap": "The party escaped the collapsing abbey and found Krezk under attack by vampire spawn. They fought alongside Boondaego and Ezmerelda while Escher and Anastrasya interfered with their escape. A counterspell saved Lucy from domination, and the party rammed the swarm with their cart as Anastrasya's fireball hit the street and killed children.",
+    "location": "Krezk streets",
+    "npcs": ["Boondaego", "Ezmerelda", "Burgomaster Boris", "Escher", "Anastrasya", "Vampire spawn"],
+    "highlight": "The party drove the cart straight into the vampire swarm."
+  },
+  {
+    "session": 41,
+    "date": null,
+    "title": "The Mists Closed the Square",
+    "recap": "As the party tried to reach the gates, the mists rolled into the square and Strahd appeared with Rahadin, Escher, and Anastrasya. Korino used his last counterspell on a wall of fire, but Rahadin dropped Lucy with his bow and Anastrasya dominated Roger. Hrulek got Lucy away on Trevor while the others scattered, leaving Roger trapped.",
+    "location": "Krezk market square and gates",
+    "npcs": ["Strahd", "Rahadin", "Escher", "Anastrasya", "Boondaego", "Elliot", "Trevor"],
+    "highlight": "Trevor resisted the animated cart long enough for Hrulek to get Lucy away."
+  },
+  {
+    "session": 42,
+    "date": null,
+    "title": "Boondaego Went Back In",
+    "recap": "The party regrouped in the ruins of Krezk and found Roger bound in magical ropes, with Boondaego being pressed to execute him. Boondaego fought Strahd alongside Roger, animating mithril railway spikes as the others tried to get clear. Strahd's chain lightning dropped Lucy, Hrulek carried her towards the exit, and Boondaego went back into the fight and died.",
+    "location": "Ruins of Krezk",
+    "npcs": ["Strahd", "Boondaego", "Ezmerelda"],
+    "highlight": "Strahd rolled two natural 1s in a row, but his next blows brought Boondaego down."
+  },
+  {
+    "session": 43,
+    "date": null,
+    "title": "The Knights Wouldn't Let Go",
+    "recap": "The party left Krezk on foot and rested while wolves circled their shelter. Godfrey guided them into Argynvostholt and showed them a route to the beacon, where they could release Argynvost's soul. Garrick tried to possess them on the way up, and the session ended with the party fighting Vladimir while trying to keep Godfrey safe.",
+    "location": "Road from Krezk and Argynvostholt",
+    "npcs": ["Godfrey", "Eldith", "Garrick", "Vladimir Horngaard", "Argynvost"],
+    "highlight": "The party's attempt to reach the beacon turned into a fight with Vladimir."
+  },
+  {
+    "session": 44,
+    "date": null,
+    "title": "The Silver Beacon",
+    "recap": "The party brought Vladimir down with the Sunsword, and Argynvost appeared in a beam of silver light. Vladimir reformed, apologised, and gave them the Holy Symbol of Ravenkind as the beacon lit. Later, Ludmilla approached Azza privately, offered help against Strahd, and gave him an earring he could use to contact her.",
+    "location": "Argynvostholt",
+    "npcs": ["Godfrey", "Vladimir Horngaard", "Argynvost", "Ludmilla"],
+    "highlight": "Argynvost appeared, Vladimir apologised, and the beacon shone again."
+  },
+  {
+    "session": 45,
+    "date": null,
+    "title": "The Wedding in the Book",
+    "recap": "The party returned to the Tome of Strahd, where Korino took Sergei's place in a memory and witnessed Strahd kill him on his wedding day. They saw Tatyana leap from a balcony and heard Azlan name Vampyr as the power in the Amber Temple. Back on the road, they helped Ivana repair her cart and considered taking a boat to Rudolf van Richten.",
+    "location": "The Tome of Strahd and the road towards Vallaki",
+    "npcs": ["Azlan", "Strahd (in the memory)", "Sergei (in the memory)", "Tatyana (in the memory)", "Ivana"],
+    "highlight": "Korino lived through Sergei's last moments from inside the memory."
+  }
+]

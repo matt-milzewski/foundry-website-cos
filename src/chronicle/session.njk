@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: chronicle
+  size: 1
+  alias: s
+permalink: "/chronicle/session-{{ s.session | pad2 }}/"
+eleventyComputed:
+  title: "Session {{ s.session }}: {{ s.title }}"
+  description: "{{ s.recap }}"
+---
+{% set prev = pagination.page.previous %}
+{% set next = pagination.page.next %}
+<article class="wrap session-page">
+  <header class="page-head">
+    <span class="eyebrow">Session {{ s.session }}{% if s.date %} · {{ s.date }}{% endif %}</span>
+    <h1>{{ s.title }}</h1>
+    {% if s.location %}<p class="muted">{{ s.location }}</p>{% endif %}
+  </header>
+  <div class="parchment stack">
+    <p>{{ s.recap }}</p>
+    {% if s.highlight %}<blockquote class="quote">{{ s.highlight }}</blockquote>{% endif %}
+    {% if s.npcs and s.npcs.length %}
+    <div>
+      <h2 class="eyebrow">Who was there</h2>
+      <ul class="chips">{% for n in s.npcs %}<li class="badge">{{ n }}</li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+  </div>
+  <nav class="pager" aria-label="Sessions">
+    {% if prev %}<a class="btn btn--ghost" href="{{ prev.session | sessionUrl }}">← Session {{ prev.session }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a class="btn btn--ghost" href="{{ next.session | sessionUrl }}">Session {{ next.session }} →</a>{% endif %}
+  </nav>
+  <p class="center"><a href="/chronicle/">Back to the chronicle</a></p>
+</article>

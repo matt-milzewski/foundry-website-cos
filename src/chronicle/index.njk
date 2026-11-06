@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Chronicle
+description: Every session of our Curse of Strahd campaign, as the party lived it.
+---
+<header class="page-head wrap">
+  <span class="eyebrow">Curse of Strahd</span>
+  <h1>The Chronicle</h1>
+  <p>Every session, told from the party's side of the table.</p>
+</header>
+
+<div class="wrap">
+  {% set blocks = chronicle | chunk(15) | reverse %}
+  {% for block in blocks %}
+  {% set first = block | first %}{% set lastEntry = block | last %}
+  <details class="arc"{% if loop.first %} open{% endif %}>
+    <summary>Sessions {{ first.session }}–{{ lastEntry.session }} <span class="visually-hidden">({{ block.length }} sessions)</span></summary>
+    <div class="arc__body">
+      {% for s in block | reverse %}
+      <article class="entry">
+        <span class="entry__num">Session {{ s.session }}{% if s.date %} · {{ s.date }}{% endif %}</span>
+        <h3><a href="{{ s.session | sessionUrl }}">{{ s.title }}</a></h3>
+        <p>{{ s.recap }}</p>
+        {% if s.location %}<p class="entry__where">{{ s.location }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </details>
+  {% endfor %}
+</div>

@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Players' Wall
+permalink: /players/
+description: The players behind the party, their characters, best quotes and legendary moments.
+---
+{% from "partials/portrait.njk" import portrait %}
+{% macro playerCard(p) %}
+<article class="parchment player section--tight" id="{{ p.player | lower }}">
+  <div>
+    <h2>{{ p.player }}</h2>
+    {% if p.award %}<span class="player__award">{{ p.award }}</span>{% endif %}
+  </div>
+  {% if p.characterCards.length %}
+  <ul class="player__chars" aria-label="Characters played by {{ p.player }}">
+    {% for c in p.characterCards %}
+    <li class="player__char{% if c.status == 'dead' or c.status == 'retired' %} is-gone{% endif %}">
+      {{ portrait(c.name, c.portrait) }}
+      <span>{{ c.name }}</span>
+      {% if c.status == 'dead' %}<span class="muted">† fallen</span>{% elif c.status == 'retired' %}<span class="muted">retired</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if p.best_quotes and p.best_quotes.length %}
+  <div>{% for q in p.best_quotes %}<blockquote class="quote">“{{ q }}”</blockquote>{% endfor %}</div>
+  {% endif %}
+  <dl class="facts">
+    {% if p.legendary_moment %}<div><dt>Legendary moment</dt><dd>{{ p.legendary_moment }}{% if p.legendary_session %} <a href="{{ p.legendary_session | sessionUrl }}">Session {{ p.legendary_session }}</a>{% endif %}</dd></div>{% endif %}
+    {% if p.funniest_moment %}<div><dt>Funniest moment</dt><dd>{{ p.funniest_moment }}</dd></div>{% endif %}
+    {% if p.signature_move %}<div><dt>Signature move</dt><dd>{{ p.signature_move }}</dd></div>{% endif %}
+    {% if p.worst_decision %}<div><dt>Worst decision</dt><dd>{{ p.worst_decision }}</dd></div>{% endif %}
+    {% if p.running_jokes and p.running_jokes.length %}<div><dt>Running jokes</dt><dd>{{ p.running_jokes | join(" · ") }}</dd></div>{% endif %}
+    {% if p.nat20_moments and p.nat20_moments.length %}<div><dt>Natural 20s</dt><dd>{% for n in p.nat20_moments %}{{ n }}{% if not loop.last %}<br>{% endif %}{% endfor %}</dd></div>{% endif %}
+    {% if p.deaths %}<div><dt>Characters lost</dt><dd>{{ p.deaths }}</dd></div>{% endif %}
+  </dl>
+</article>
+{% endmacro %}
+
+<header class="page-head wrap">
+  <span class="eyebrow">The people at the table</span>
+  <h1>The Players' Wall</h1>
+  <p>Ninety sessions of brilliant plans, terrible ideas and dice that occasionally behaved.</p>
+</header>
+
+<div class="wrap">
+  {% for p in players %}{% if p.current %}{{ playerCard(p) }}{% endif %}{% endfor %}
+  {% set guests = players | rejectattr("current") %}
+  {% if guests | length %}
+  <h2 class="section-title subhead">Guest stars</h2>
+  {% for p in guests %}{{ playerCard(p) }}{% endfor %}
+  {% endif %}
+</div>

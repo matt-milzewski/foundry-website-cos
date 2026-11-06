@@ -1,0 +1,184 @@
+{
+  "sessions_played": 88,
+  "started": "14 September 2023",
+  "total_pc_deaths": null,
+  "resurrections": null,
+  "villains_defeated": [
+    {
+      "name": "Morgantha (Old Nan)",
+      "session": 14
+    },
+    {
+      "name": "The Abbot",
+      "session": 39
+    },
+    {
+      "name": "Vladimir Horngaard",
+      "session": 44
+    },
+    {
+      "name": "Escher",
+      "session": 52
+    },
+    {
+      "name": "Anastrasya",
+      "session": 59
+    },
+    {
+      "name": "The likeness of Hrulek's master",
+      "session": 76
+    }
+  ],
+  "biggest_fights": [
+    {
+      "name": "Old Bonegrinder",
+      "session": 13,
+      "why": "The hags' lightning dropped most of the party, killed Zarr, and left Azza barely stable by the door."
+    },
+    {
+      "name": "Battle in the Ravenloft crypts",
+      "session": 25,
+      "why": "The party crossed a running battle between Strahd and the revenant knights to reach Sergei's crypt. Gurn fell to Rahadin as the others escaped."
+    },
+    {
+      "name": "The Abbot's last stand",
+      "session": 39,
+      "why": "A last counterspell spared the party from a sphere of death before the Sunsword consumed the Abbot."
+    },
+    {
+      "name": "Escher and the Guardian",
+      "session": 52,
+      "why": "Roger tore out Escher's throat with his werewolf fangs, and the Guardian crumbled to dust. Escher was the first of Strahd's consorts the party defeated."
+    },
+    {
+      "name": "Anastrasya's final waltz",
+      "session": 59,
+      "why": "Anastrasya repeatedly dropped party members with fireballs while the organ music kept Ezmerelda dancing. Roger killed Anastrasya with his final strike."
+    },
+    {
+      "name": "The fight at Vampyr's tomb",
+      "session": 76,
+      "why": "The party fought in a chamber with sheer drops. Hrulek impaled the likeness of his former master on his glaive and later decapitated Scrippy."
+    },
+    {
+      "name": "The meteor strike",
+      "session": 77,
+      "why": "Zadkiel forced Ludmilla to retreat with the Sunsword, but a Wall of Force blocked the exit. The meteors killed Zadkiel and reduced Hrulek to ash."
+    }
+  ],
+  "legendary_items": [
+    {
+      "name": "Sunsword",
+      "holder": "Zadkiel",
+      "how_found": "Zarcharus placed the sword in Sergei's hand in the Ravenloft crypts, where it began to charge. It later flew into Zadkiel's hand when he descended in a beam of sunlight."
+    },
+    {
+      "name": "Holy Symbol of Ravenkind",
+      "holder": null,
+      "how_found": "Vladimir gave the party the necklace at Argynvostholt after Argynvost appeared and Vladimir acknowledged that rage had consumed him."
+    },
+    {
+      "name": "Tome of Strahd",
+      "holder": null,
+      "how_found": null
+    },
+    {
+      "name": "Jefferson",
+      "holder": "Korino",
+      "how_found": "Rudolf van Richten gave Korino a suit of half plate inhabited by the soul of an accountant."
+    },
+    {
+      "name": "The Seeker's cloak",
+      "holder": "Hrulek",
+      "how_found": "The Seeker wrapped Hrulek in the cloak after he spoke a difficult truth. The cloak revealed creatures' vulnerabilities, resistances, and immunities."
+    },
+    {
+      "name": "Ireena's locket",
+      "holder": null,
+      "how_found": "Strahd gave the locket to Ireena on Strahdmas. It glowed in his presence."
+    }
+  ],
+  "places_visited": [
+    "Death House",
+    "Village of Barovia",
+    "Blood of the Vine Tavern",
+    "Barovia village church and graveyard",
+    "Tser Pool Vistani camp",
+    "Old Bonegrinder",
+    "Vallaki",
+    "St. Andral's Church",
+    "Blue Water Inn",
+    "Huntress's fane",
+    "Weaver's fane",
+    "Seeker's fane",
+    "Castle Ravenloft",
+    "Ravenloft crypts",
+    "Krezk",
+    "Abbey of Saint Markovia",
+    "Argynvostholt",
+    "Rudolf van Richten's tower and laboratory",
+    "Tsolenka Pass",
+    "Amber Temple",
+    "Vampyr's tomb"
+  ],
+  "closest_calls": [
+    {
+      "what": "The party fled Death House after the cult's demand for a sacrifice brought out a shambling mound and five spectres.",
+      "session": 5
+    },
+    {
+      "what": "Korino got back up on a natural 20 and crawled to the fane with Baba Yaga standing over it.",
+      "session": 34
+    },
+    {
+      "what": "The party fled Krezk under Strahd's chain lightning, and Boondaego died after going back in.",
+      "session": 42
+    },
+    {
+      "what": "A Death Ward and Jefferson's magic kept Korino alive through three legendary attacks that tore open his chest.",
+      "session": 65
+    },
+    {
+      "what": "After Ludmilla reduced Hrulek to ash, Korino's wish brought him before Nhazul. Korino pledged his soul after death, and Hrulek was reassembled from ash.",
+      "session": 74
+    },
+    {
+      "what": "The meteor strike left Zadkiel dead and Hrulek in ashes. Strahd returned Zadkiel's body and offered a potion and a way out.",
+      "session": 77
+    }
+  ],
+  "party_firsts": [
+    {
+      "what": "Entered Death House.",
+      "session": 1
+    },
+    {
+      "what": "Escaped Death House and found a welcome basket signed S.",
+      "session": 5
+    },
+    {
+      "what": "Saw a party member revived after death when Strahd brought Zarr back on Strahdmas.",
+      "session": 11
+    },
+    {
+      "what": "Received Madam Eva's card reading.",
+      "session": 12
+    },
+    {
+      "what": "Restored the Huntress's fane.",
+      "session": 22
+    },
+    {
+      "what": "Received the Holy Symbol of Ravenkind from Vladimir.",
+      "session": 44
+    },
+    {
+      "what": "Defeated their first consort, Escher.",
+      "session": 52
+    },
+    {
+      "what": "Saw Korino cast Wish, asking to restore the party to its state at dawn.",
+      "session": 73
+    }
+  ]
+}
