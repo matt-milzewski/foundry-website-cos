@@ -1,0 +1,143 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  natural20tavern RSVP reminder. An hourly job emails Matt who's coming to the next
+  session, once everyone has replied or 48 hours before it starts.
+  See docs/superpowers/specs/2026-11-07-rsvp-reminder-design.md.
+  The function code is uploaded separately with scripts/deploy-reminder.ps1.
+
+Parameters:
+  RecipientEmail:
+    Type: String
+    Description: Where reminder emails go. Passed at deploy time so it stays out of the public repo.
+  HostedZoneId:
+    Type: AWS::Route53::HostedZone::Id
+    Description: Route 53 zone for thenatural20tavern.com
+  TableName:
+    Type: String
+    Default: TavernCalendar
+
+Resources:
+  # Lets SES send as @thenatural20tavern.com, signed with DKIM so it doesn't land in spam.
+  EmailDomain:
+    Type: AWS::SES::EmailIdentity
+    Properties:
+      EmailIdentity: thenatural20tavern.com
+
+  DkimRecord1:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !GetAtt EmailDomain.DkimDNSTokenName1
+      Type: CNAME
+      TTL: "1800"
+      ResourceRecords: [!GetAtt EmailDomain.DkimDNSTokenValue1]
+
+  DkimRecord2:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !GetAtt EmailDomain.DkimDNSTokenName2
+      Type: CNAME
+      TTL: "1800"
+      ResourceRecords: [!GetAtt EmailDomain.DkimDNSTokenValue2]
+
+  DkimRecord3:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !GetAtt EmailDomain.DkimDNSTokenName3
+      Type: CNAME
+      TTL: "1800"
+      ResourceRecords: [!GetAtt EmailDomain.DkimDNSTokenValue3]
+
+  LogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/lambda/rsvpReminder
+      RetentionInDays: 30
+      Tags: [{ Key: Project, Value: natural20tavern }]
+
+  # Can only read RSVPs, record what it sent, and send from reminders@thenatural20tavern.com.
+  FunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: natural20tavern-reminder
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: reminder
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: [logs:CreateLogStream, logs:PutLogEvents]
+                Resource: !GetAtt LogGroup.Arn
+              - Effect: Allow
+                Action: dynamodb:GetItem
+                Resource: !Sub arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}
+                Condition:
+                  ForAllValues:StringLike:
+                    dynamodb:LeadingKeys: ["rsvp#*", "reminder#*"]
+              - Effect: Allow
+                Action: dynamodb:UpdateItem
+                Resource: !Sub arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/${TableName}
+                Condition:
+                  ForAllValues:StringLike:
+                    dynamodb:LeadingKeys: ["reminder#*"]
+              - Effect: Allow
+                Action: ses:SendEmail
+                Resource: !Sub arn:aws:ses:${AWS::Region}:${AWS::AccountId}:identity/thenatural20tavern.com
+                Condition:
+                  StringEquals:
+                    ses:FromAddress: reminders@thenatural20tavern.com
+      Tags: [{ Key: Project, Value: natural20tavern }]
+
+  Function:
+    Type: AWS::Lambda::Function
+    DependsOn: LogGroup
+    Properties:
+      FunctionName: rsvpReminder
+      Description: Emails Matt the RSVP summary before each session
+      Runtime: nodejs22.x
+      Handler: index.handler
+      Role: !GetAtt FunctionRole.Arn
+      Timeout: 30
+      MemorySize: 256
+      # Placeholder until scripts/deploy-reminder.ps1 uploads the real code.
+      Code:
+        ZipFile: "exports.handler = async () => ({ sent: null, reason: 'code not uploaded yet' });"
+      Environment:
+        Variables:
+          SCHEDULE_URL: https://thenatural20tavern.com/schedule.json
+          SITE_URL: https://thenatural20tavern.com
+          TABLE: !Ref TableName
+          FROM: Natural 20 Tavern <reminders@thenatural20tavern.com>
+          TO: !Ref RecipientEmail
+      Tags: [{ Key: Project, Value: natural20tavern }]
+
+  # 5 minutes past every hour.
+  HourlyRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: natural20tavern-reminder-hourly
+      Description: Checks whether the RSVP reminder email is due
+      ScheduleExpression: cron(5 * * * ? *)
+      Targets:
+        - Id: rsvpReminder
+          Arn: !GetAtt Function.Arn
+
+  HourlyRulePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref Function
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt HourlyRule.Arn
+
+Outputs:
+  FunctionName:
+    Value: !Ref Function

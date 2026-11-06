@@ -1,0 +1,6 @@
+---
+permalink: /schedule.json
+eleventyExcludeFromCollections: true
+---
+{# Read by the rsvpReminder Lambda (backend/reminder) to work out the next session. #}
+{{ schedule | json | safe }}

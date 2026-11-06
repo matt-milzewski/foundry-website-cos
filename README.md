@@ -28,3 +28,12 @@ npm run e2e          # page tests at phone, tablet and desktop widths
 - Eleventy builds static pages from `src/` into `_site/`. Pushing to `main` runs `.github/workflows/deploy.yaml`, which tests, builds, syncs `_site/` to the S3 bucket and refreshes CloudFront.
 - The "who's coming" buttons call `backend/rsvp` (the `calendarHandler` Lambda behind `TavernCalendarAPI`). It only accepts the four players' names and yes / no / clear. It's rate-limited, so there's no login.
 - The Foundry badge reads `https://foundry.thenatural20tavern.com/api/status` straight from the browser.
+- **Reminder email** (`backend/reminder`, the `rsvpReminder` Lambda from `infra/reminder.yaml`):
+  - Runs hourly and reads `/schedule.json` from the live site.
+  - Emails Matt who's coming once everyone has replied, or 48 hours before the session if that comes first.
+  - If replies were still missing at 48 hours, sends one more email when the last one lands.
+  - After changing code under `backend/reminder` or `src/assets/js/lib/schedule.js`, run `powershell -ExecutionPolicy Bypass -File scripts/deploy-reminder.ps1`.
+  - To send a test email now, invoke it with `{"test": true}`:
+    ```bash
+    aws lambda invoke --function-name rsvpReminder --cli-binary-format raw-in-base64-out --payload '{"test":true}' out.json
+    ```
