@@ -61,7 +61,7 @@ Navigation: a top bar on desktop, a compact menu button on phones. The old `cale
 }
 ```
 
-- The browser works out the next session: the earliest upcoming override, otherwise the next regular Monday, skipping cancelled dates. A session counts as "next" until 4 hours after its start.
+- The browser works out the next session: the earliest upcoming override, otherwise the next regular Monday, skipping cancelled dates. A session counts as "next" until it starts; then the banner moves straight on to the one after.
 - The banner shows the night in both group time zones, because only the user is in Queensland: "Sunday 8 Nov · 8:00 pm QLD · 9:00 pm VIC". Victoria's daylight saving is handled with `Intl.DateTimeFormat` for `Australia/Brisbane` and `Australia/Melbourne`. It also shows a countdown.
 - Under the banner, each player's first name has a thumbs-up and thumbs-down button showing their current answer. Tapping sets it, and tapping the same one again clears it. Everyone sees everyone's answers.
 - Answers are tied to the session date, so they reset by themselves when the next session comes round.

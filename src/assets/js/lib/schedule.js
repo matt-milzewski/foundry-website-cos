@@ -4,7 +4,7 @@
 const QLD_OFFSET_H = 10;
 const HOUR = 3600e3;
 const DAY = 24 * HOUR;
-const LINGER_MS = 4 * HOUR; // a session stays "next" until 4 hours after it starts
+// A session stops being "next" the moment it starts, and the banner moves on to the one after.
 
 function qldToUtc(dateStr, time) {
   const [y, m, d] = dateStr.split("-").map(Number);
@@ -22,7 +22,7 @@ function qldDateStr(instant) {
  * @returns {{date:string, start:Date, note:string|null} | null}
  */
 export function nextSession(schedule, now = new Date()) {
-  const cutoff = now.getTime() - LINGER_MS;
+  const cutoff = now.getTime();
   const cancelled = new Set(schedule.cancelled || []);
   const overrides = schedule.overrides || [];
   const overrideDates = new Set(overrides.map((o) => o.date));
@@ -30,7 +30,7 @@ export function nextSession(schedule, now = new Date()) {
 
   for (const o of overrides) {
     const start = qldToUtc(o.date, o.time);
-    if (start.getTime() >= cutoff && !cancelled.has(o.date)) {
+    if (start.getTime() > cutoff && !cancelled.has(o.date)) {
       candidates.push({ date: o.date, start, note: o.note ?? null });
     }
   }
@@ -41,7 +41,7 @@ export function nextSession(schedule, now = new Date()) {
     const weekday = new Date(ds + "T00:00:00Z").getUTCDay();
     if (weekday === schedule.regular.weekday && !cancelled.has(ds) && !overrideDates.has(ds)) {
       const start = qldToUtc(ds, schedule.regular.time);
-      if (start.getTime() >= cutoff) {
+      if (start.getTime() > cutoff) {
         candidates.push({ date: ds, start, note: null });
         break;
       }
@@ -74,10 +74,10 @@ export function formatSessionTimes(start) {
   };
 }
 
-/** Countdown text like "in 1 day 3 hrs", "in 45 mins", or "Happening now". */
+/** Countdown text like "in 1 day 3 hrs" or "in 45 mins". */
 export function countdownText(start, now = new Date()) {
   const diff = start.getTime() - now.getTime();
-  if (diff <= 0) return diff > -LINGER_MS ? "Happening now" : "";
+  if (diff <= 0) return "Starting now"; // only for the instant before the banner moves on
   const mins = Math.round(diff / 60e3);
   const days = Math.floor(mins / 1440);
   const hrs = Math.floor((mins % 1440) / 60);
