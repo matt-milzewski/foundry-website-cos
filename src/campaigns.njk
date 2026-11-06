@@ -2,18 +2,18 @@
 layout: layouts/base.njk
 title: Campaigns
 permalink: /campaigns/
-description: The campaigns and one-shots played at the Natural 20 Tavern.
+description: Curse of Strahd, our current campaign, and the one-shots planned at the Natural 20 Tavern.
 ---
 <header class="page-head wrap">
   <span class="eyebrow">Our tables</span>
   <h1>Campaigns</h1>
-  <p>Where we've been, and where we're headed after Barovia.</p>
+  <p>Our current campaign, and what's planned next.</p>
 </header>
 
 <div class="wrap grid grid--2">
   {% for c in campaigns %}
   <article class="card campaign{% if c.name == 'Curse of Strahd' %} card--accent{% endif %}">
-    <span class="badge campaign__status">{% if c.name == 'Curse of Strahd' %}Final chapter{% elif c.status == 'planned' %}Coming up{% elif c.status == 'finished' %}Finished{% else %}{{ c.status or c.type }}{% endif %}</span>
+    <span class="badge campaign__status">{% if c.name == 'Curse of Strahd' %}Now playing{% elif c.status == 'planned' %}Coming up{% elif c.status == 'finished' %}Finished{% else %}{{ c.status or c.type }}{% endif %}</span>
     <h2>{{ c.name }}</h2>
     <p>{{ c.blurb }}</p>
     {% if c.name == 'Curse of Strahd' %}<p class="muted">{{ records.sessions_played }} sessions so far, since {{ records.started }}. <a href="/chronicle/">Read the chronicle</a>.</p>{% endif %}
