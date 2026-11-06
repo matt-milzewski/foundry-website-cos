@@ -1,0 +1,40 @@
+{
+  "exclude": ["Jazz", "Natasha", "Lucy", "Spaghetti Bolognese"],
+  "replace": [
+    ["Hruket's likeness", "The likeness of Hrulek's master"],
+    ["The party met Roger and Lucy amid the chaos, and Lucy heard Argynvost's voice when the Sunsword came into contact with the dead dragon's skull.", "The party met Roger amid the chaos, and Argynvost's voice stirred when the Sunsword touched the dead dragon's skull."],
+    ["Lucy took a blast rather than let Argynvost's soul be pulled from the Sunsword, and spectral scales appeared on her after she hit the wall.", "The ritual tried to tear Argynvost's soul out of the Sunsword, and the party threw themselves into stopping it."],
+    ["Lucy put herself in the path of the blast to keep Argynvost in the sword.", "The party kept Argynvost's soul in the Sunsword."],
+    ["Lucy used Misty Step to snatch the sword back from Roger, and the party ran for the exit.", "The party grabbed the sword and ran for the exit."],
+    ["A counterspell saved Lucy from domination, and the party rammed", "A counterspell saved the party from domination, and they rammed"],
+    ["Korino used his last counterspell on a wall of fire, but Rahadin dropped Lucy with his bow and Anastrasya dominated Roger. Hrulek got Lucy away on Trevor while the others scattered, leaving Roger trapped.", "Korino used his last counterspell on a wall of fire, but Rahadin's arrows found their marks and Anastrasya dominated Roger. Hrulek got clear on Trevor while the others scattered, leaving Roger trapped."],
+    ["Trevor resisted the animated cart long enough for Hrulek to get Lucy away.", "Trevor held off the animated cart long enough for Hrulek to get clear."],
+    ["Strahd's chain lightning dropped Lucy, Hrulek carried her towards the exit, and Boondaego went back into the fight and died.", "Strahd's chain lightning tore through the party as they ran for the exit, and Boondaego went back into the fight and died."],
+    ["The party fled Krezk under Strahd's chain lightning. Hrulek carried Lucy out after she went down, and Boondaego died after going back in.", "The party fled Krezk under Strahd's chain lightning, and Boondaego died after going back in."],
+    ["At Rudolf van Richten's tower, they got past his traps and found him in his lab, where Lucy touched a clockwork gem and vanished into it.", "At Rudolf van Richten's tower, they got past his traps and found him in his lab."],
+    ["Lucy warned everyone away from the gem just before it sent her to the Feywild and left her cat behind.", "Roger dived into the lake to drag Ezmerelda back aboard."],
+    ["The party took stock after Lucy's disappearance and learned", "The party took stock and learned"],
+    ["A lakeside workshop defended by traps, running water, and an antimagic chamber. Lucy vanished into a clockwork gem in the laboratory.", "A lakeside workshop defended by traps, running water, and an antimagic chamber."],
+    ["14 September (year unrecorded)", "14 September 2023"],
+    ["24 September (year unrecorded)", "24 September 2023"],
+    ["8 October (year unrecorded)", "8 October 2023"],
+    ["15 October (year unrecorded)", "15 October 2023"],
+    ["22 October (year unrecorded)", "22 October 2023"]
+  ],
+  "removeQuotes": ["If your face is the last I see before I depart, I will die happy"],
+  "currentPlayers": ["Danny", "Fraser", "Ryan", "Stefan"],
+  "portraitMap": {
+    "Azza": "forge-assets/other-6502d72e9ec7c4a7eabe038d/tokenizer/pc-images/aza.Avatar.webp",
+    "Gurn Ga Dar": "forge-assets/other-6502d6979ec7c41ecdbdec65/tokenizer/pc-images/gurn_gurn_gadar.Avatar.webp",
+    "Zarcharus": "forge-assets/tokenizer/pc-images/zarcharus.Avatar.webp",
+    "Zarr Da Gar": "forge-assets/tokenizer/pc-images/zarr_gadar.Avatar.webp",
+    "Hrulek Surprise": "forge-assets/tokenizer/pc-images/hrulek.Avatar.webp",
+    "Korino Kadajin": "tokenizer/pc-images/korino_kadajin_champion_of_nhazul.Avatar.webp",
+    "Roger Van Richten": "forge-assets/other-62d2255242253745c9872b41/tokenizer/pc-images/roger.Avatar.webp",
+    "Dawnmaster Zadkiel": "tokenizer/pc-images/zadkiel.Avatar.webp",
+    "Tuulikki": "forge-assets/other-6502d6979ec7c41ecdbdec65/tokenizer/npc-images/tuulikki_the_lightning_drake.Avatar.webp"
+  },
+  "alliesLost": ["Boondaego Spitecraft", "Kolyan Indirovich", "Father Lucien", "Argynvost"],
+  "campaignBlurbs": {},
+  "spoilerWatch": ["secret", "finale", "will be", "plans to", "is actually", "really is", "destined"]
+}

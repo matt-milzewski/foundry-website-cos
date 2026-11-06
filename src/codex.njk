@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+title: Codex
+permalink: /codex/
+description: The people, places, factions and lore of Barovia, as far as the party knows.
+scripts:
+  - /assets/js/codex-filter.js
+---
+{% macro seen(n, label) %}{% if n %}<span class="seen muted">{{ label }}: {% if n in codex.hasPage %}<a href="{{ n | sessionUrl }}">Session {{ n }}</a>{% else %}Session {{ n }}{% endif %}</span>{% endif %}{% endmacro %}
+
+<header class="page-head wrap">
+  <span class="eyebrow">Barovia, as the party knows it</span>
+  <h1>The Codex</h1>
+  <p>Only what the party has seen, heard or learned at the table. No secrets from behind the screen.</p>
+</header>
+
+<div class="wrap" id="codex">
+  <div class="filters" role="group" aria-label="Filter the codex" hidden>
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="people" aria-pressed="false">People</button>
+    <button type="button" data-filter="places" aria-pressed="false">Places</button>
+    <button type="button" data-filter="factions" aria-pressed="false">Factions</button>
+    <button type="button" data-filter="lore" aria-pressed="false">Lore</button>
+  </div>
+  <label class="visually-hidden" for="codex-search">Search the codex</label>
+  <input class="search" id="codex-search" type="search" placeholder="Search names, places, lore…" data-search hidden>
+  <p class="muted" data-empty hidden>Nothing in the codex matches that.</p>
+
+  <section class="codex-group section--tight" data-type="people">
+    <h2 class="section-title">People</h2>
+    <div class="grid grid--2">
+      {% for p in codex.people %}
+      <article class="card codex-item">
+        <div class="codex-item__head">
+          <h3>{{ p.name }}</h3>
+          {% if p.relationship %}<span class="badge badge--{{ p.relationship }}">{{ p.relationship }}</span>{% endif %}
+          {% if p.status %}<span class="badge badge--{{ p.status }}">{{ p.status }}</span>{% endif %}
+        </div>
+        <p>{{ p.who }}</p>
+        {{ seen(p.first_met, "First met") }}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="codex-group section--tight" data-type="places">
+    <h2 class="section-title">Places</h2>
+    <div class="grid grid--2">
+      {% for p in codex.places %}
+      <article class="card codex-item">
+        <div class="codex-item__head"><h3>{{ p.name }}</h3></div>
+        <p>{{ p.what }}</p>
+        {{ seen(p.first_visited, "First visited") }}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="codex-group section--tight" data-type="factions">
+    <h2 class="section-title">Factions</h2>
+    <div class="grid grid--2">
+      {% for f in codex.factions %}
+      <article class="card codex-item">
+        <div class="codex-item__head"><h3>{{ f.name }}</h3></div>
+        <p>{{ f.what }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="codex-group section--tight" data-type="lore">
+    <h2 class="section-title">Lore</h2>
+    <div class="grid grid--2">
+      {% for l in codex.lore %}
+      <article class="card codex-item">
+        <div class="codex-item__head"><h3>{{ l.topic }}</h3></div>
+        <p>{{ l.what_we_learned }}</p>
+        {{ seen(l.session, "Learned") }}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>

@@ -1,0 +1,80 @@
+---
+layout: layouts/base.njk
+title: The Natural 20 Tavern
+bodyClass: home
+scripts:
+  - /assets/js/next-session.js
+  - /assets/js/rsvp.js
+  - /assets/js/status.js
+---
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Curse of Strahd · the final chapter</span>
+    <h1>The Natural 20 Tavern</h1>
+    <p>{{ site.tagline }}</p>
+    <div class="hero__actions">
+      <a class="btn" href="{{ site.foundryUrl }}">Enter the Foundry</a>
+      <a class="btn btn--ghost" href="#next">Next session</a>
+    </div>
+    <div class="status" id="foundry-status" data-url="{{ site.foundryStatusUrl }}" data-worlds='{{ site.worlds | json }}' data-state="checking" role="status">
+      <span class="status__dot" aria-hidden="true"></span>
+      <span data-text>Checking the Foundry…</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="next">
+  <div class="wrap">
+    <div class="card card--accent session">
+      <div id="next-session" data-schedule='{{ schedule | json }}'>
+        <span class="eyebrow">Next session</span>
+        <p class="session__when" data-when>Mondays</p>
+        <p class="session__times" data-times><strong>8:00 pm QLD</strong> · <strong>9:00 pm VIC</strong></p>
+        <p class="session__note badge" data-note hidden></p>
+        <p class="session__countdown" data-countdown></p>
+        <p class="muted">Victoria is an hour ahead during daylight saving, so the VIC time changes through the year.</p>
+      </div>
+      <div id="rsvp" data-api="{{ site.apiBase }}" data-players='{{ schedule.players | json }}'>
+        <h2 class="visually-hidden">Who's coming</h2>
+        <span class="eyebrow">Who's coming</span>
+        <ul class="rsvp" aria-label="Who's coming to the next session">
+          {% for p in schedule.players %}<li class="rsvp__row" data-player="{{ p }}"><span class="rsvp__name">{{ p }}</span><span class="rsvp__state">…</span></li>{% endfor %}
+        </ul>
+        <p class="rsvp__summary muted" data-summary></p>
+        <p class="rsvp__error" data-error role="alert"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set latest = chronicle | last %}
+{% if latest %}
+<section class="section section--tight">
+  <div class="wrap">
+    <h2 class="section-title">Last time in Barovia</h2>
+    <article class="card">
+      <span class="entry__num">Session {{ latest.session }}</span>
+      <h3><a href="{{ latest.session | sessionUrl }}">{{ latest.title }}</a></h3>
+      <p>{{ latest.recap }}</p>
+      <a href="/chronicle/">Read the whole chronicle</a>
+    </article>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--tight">
+  <div class="wrap grid grid--3">
+    <a class="card card--link" href="/players/">
+      <h3>The Players' Wall</h3>
+      <p class="muted">Best quotes, legendary moments and questionable decisions.</p>
+    </a>
+    <a class="card card--link" href="/in-memoriam/">
+      <h3>In Memoriam</h3>
+      <p class="muted">The heroes Barovia kept.</p>
+    </a>
+    <a class="card card--link" href="/codex/">
+      <h3>The Codex</h3>
+      <p class="muted">Everyone and everywhere the party has met, as far as they know.</p>
+    </a>
+  </div>
+</section>

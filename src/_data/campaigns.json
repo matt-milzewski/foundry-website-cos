@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Curse of Strahd",
+    "type": "campaign",
+    "status": "ongoing",
+    "sessions": 88,
+    "blurb": "A band of adventurers followed two children into a house in the fog and found themselves trapped in Barovia. Their search for a way out took them through haunted ruins, uneasy alliances, and the occasional argument over what counted as dinner.",
+    "highlights": [
+      "A sling stone hatched into Tuulikki the drake.",
+      "Hrulek summoned Trevor the war camel.",
+      "The party put on a circus in Vallaki and filled the seats with two natural 20s."
+    ]
+  },
+  {
+    "name": "Ballrooms & Barnacles",
+    "type": "one-shot",
+    "status": "planned",
+    "sessions": null,
+    "blurb": "Set in the Iron Sun archipelago, this one-shot takes place aboard High Roller Reef, a floating casino-palace. The premise is a heist.",
+    "highlights": []
+  }
+]

@@ -1,0 +1,1211 @@
+[
+  {
+    "session": 1,
+    "date": "14 September 2023",
+    "title": "The Door Locked Behind Us",
+    "recap": "An old farmer warned the party away from the fog, but two children outside a manor drew them in with a plea to help baby William. The doors locked behind them, and they found an enchanted snow globe, a windmill-hilted sword, and a letter from Strahd. They fought off a spectral maid, only for a suit of armour to come to life and leave Gurn fighting for survival.",
+    "location": "Death House",
+    "npcs": [
+      "The old farmer",
+      "Rose Durst",
+      "Thorn Durst",
+      "The spectral maid"
+    ],
+    "highlight": "A rune lit up as Azza took the snow globe and the house locked the party inside."
+  },
+  {
+    "session": 2,
+    "date": "24 September 2023",
+    "title": "The Children in the Attic",
+    "recap": "Gurn survived his encounter with the armour after DealsInLuck offered him help in exchange for a future favour. In the attic, the party found Rose and Thorn's remains and learned from their ghosts that their bones belonged in the family crypt. The search for a way down took the party through a room full of stuffed dire wolves.",
+    "location": "Death House",
+    "npcs": [
+      "DealsInLuck",
+      "Rose Durst",
+      "Thorn Durst"
+    ],
+    "highlight": "Gurn discovered that his magic ring could retrieve things from more places than pockets."
+  },
+  {
+    "session": 3,
+    "date": "8 October 2023",
+    "title": "The Grick and the Grave",
+    "recap": "The party followed chanting into the crypts, pocketed coins from a sack made of skin, and fought off a rush of zombies. A grick killed Steve, and the party cut the creature open to salvage its organs. Gustav's crypt was empty, but Elizabeth's was full of centipedes.",
+    "location": "Death House crypts",
+    "npcs": [
+      "Steve",
+      "The grick"
+    ],
+    "highlight": "Azza saved the lungs and liver and asked, \"I can eat people if they're dead? Not the hearts though\"."
+  },
+  {
+    "session": 4,
+    "date": "15 October 2023",
+    "title": "The Door Had Teeth",
+    "recap": "A stranger saved Zarr from dire wolves, knocked him out, and left the party to find him in a bag. In the crypts, Zarcharus was pulled into a memory while the others fought chained skeletons. A door swallowed Azza, and the party had to fight the mimic to get them back.",
+    "location": "Death House crypts",
+    "npcs": [
+      "The unidentified stranger",
+      "The door mimic",
+      "The ghast"
+    ],
+    "highlight": "Zarcharus heard \"Tatiana has returned\" while the rest of the party fought for their lives."
+  },
+  {
+    "session": 5,
+    "date": "22 October 2023",
+    "title": "One Must Die",
+    "recap": "The party followed chanting into a flooded chamber where unseen voices demanded a sacrifice. Their attempt to fake one failed, and they fought spectres and a shambling mound before barely making it outside. They found a welcome basket signed S, and Gurn later watched one of his sling stones hatch into a blue drake.",
+    "location": "Death House and the road to Barovia village",
+    "npcs": [
+      "The shambling mound",
+      "Tuulikki"
+    ],
+    "highlight": "The chamber fell silent before the demand came: \"One must die\"."
+  },
+  {
+    "session": 6,
+    "date": null,
+    "title": "Follow the Red Mud",
+    "recap": "In Barovia village, the party met Ismark and Vasili at the Blood of the Vine and heard about a missing cobbler. His daughter Ivy described the person she saw at the house, and red mud at the door pointed the party towards the graveyard. Zarcharus jumped the fence and Azza opened the gate just as zombies began crawling out of the ground.",
+    "location": "Village of Barovia",
+    "npcs": [
+      "Ismark",
+      "Vasili",
+      "Ivy",
+      "Father Donavich"
+    ],
+    "highlight": "The red mud led to the graveyard, where the dead answered the party's investigation."
+  },
+  {
+    "session": 7,
+    "date": null,
+    "title": "Run, Son, Run",
+    "recap": "The party fought through the graveyard and into the chapel, where Doru bit Gurn and Zarcharus struck down Father Donavich. A vampire who introduced himself as Esha gave them a letter to deliver to Burgomaster Kolyan. At the mansion, the party learned that Strahd had challenged Kolyan to single combat and that Kolyan had once separated the sunlight from the Sunsword to protect Ireena.",
+    "location": "Barovia village church and burgomaster's mansion",
+    "npcs": [
+      "Father Donavich",
+      "Doru",
+      "Esha",
+      "Kolyan",
+      "Ismark",
+      "Ireena"
+    ],
+    "highlight": "Tuulikki helped Gurn push Doru off him with a critical hit."
+  },
+  {
+    "session": 8,
+    "date": null,
+    "title": "A Duel on an Island of Bones",
+    "recap": "The party followed Kolyan to a shallow red pool with an island of bones, where he faced Strahd in single combat. They watched a ruby restore Strahd's wounds and saw Kolyan fall. Strahd offered the party passage out of Barovia in exchange for Rudolf van Richten, then returned Kolyan's body to Ireena.",
+    "location": "The blood pools outside Barovia village",
+    "npcs": [
+      "Strahd",
+      "Kolyan",
+      "Ireena",
+      "Esha",
+      "Ludmilla",
+      "Ismark"
+    ],
+    "highlight": "The party watched Strahd's wounds close mid-duel."
+  },
+  {
+    "session": 9,
+    "date": null,
+    "title": "The School Was Burning",
+    "recap": "With Antoni holding the burgomaster's mansion, Ismark asked the party to help take it back. They rushed into a burning school to save trapped children, then fought their way through town. At the mansion, they found Antoni's guards backed by three werewolves.",
+    "location": "Barovia village school and burgomaster's mansion",
+    "npcs": [
+      "Ismark",
+      "Ireena",
+      "Antoni"
+    ],
+    "highlight": "Zarcharus charged back into the burning school for the last child."
+  },
+  {
+    "session": 10,
+    "date": null,
+    "title": "The Pack at the Mansion",
+    "recap": "The party fought Antoni's werewolves to secure the mansion for Ismark. When Azza went down and the pack leader lunged for Azza and Ismark, the others piled on and brought him down. Ismark promised to help the party in return, and they set out towards Vallaki.",
+    "location": "Barovia village and the road to Vallaki",
+    "npcs": [
+      "Ismark",
+      "Ireena",
+      "The werewolf leader"
+    ],
+    "highlight": "The party stopped the pack leader just before he could finish Azza and Ismark."
+  },
+  {
+    "session": 11,
+    "date": null,
+    "title": "No One Dies on Strahdmas",
+    "recap": "Volenta confronted the party on the road, and Zarr charged her and died. Strahd rode in on his nightmare, called Volenta off, and revived Zarr before handing out presents. The party later accepted an invitation from Vistani travellers and met Madam Eva.",
+    "location": "Road to Vallaki and the Vistani camp",
+    "npcs": [
+      "Volenta",
+      "Strahd",
+      "Ireena",
+      "Vasili",
+      "Niko",
+      "Bogdon",
+      "Madam Eva"
+    ],
+    "highlight": "Strahd brought Zarr back and said, \"No one dies on Strahdmas day.\""
+  },
+  {
+    "session": 12,
+    "date": null,
+    "title": "A Future Worth Avoiding",
+    "recap": "Madam Eva showed the party a possible future in which their mistrust turned them against one another at Ravenloft. Gurn fell in the vision, and waking up did little to ease the party's suspicions. They also heard clues about a tome, a holy symbol, a sword of sunlight, and an ally who walked alone.",
+    "location": "Madam Eva's tent at the Vistani camp",
+    "npcs": [
+      "Madam Eva",
+      "Strahd (in the vision)"
+    ],
+    "highlight": "The party came out of a vision meant to unite them with even less trust in one another."
+  },
+  {
+    "session": 13,
+    "date": null,
+    "title": "Lightning at Old Bonegrinder",
+    "recap": "The party left Madam Eva's tent and followed a road that seemed to grow greener until the illusion fell away and left them in a swamp with redcaps. They reached the windmill and found the pie seller Morgantha there with her daughters. The hags unleashed lightning, killing Zarr and leaving Azza barely stable by the door.",
+    "location": "The swamp road and Old Bonegrinder",
+    "npcs": [
+      "Madam Eva",
+      "Vasili",
+      "Morgantha",
+      "Morgantha's daughters"
+    ],
+    "highlight": "The party recognised the pie seller just before her coven tore through them with lightning."
+  },
+  {
+    "session": 14,
+    "date": null,
+    "title": "What the Windmill Cost",
+    "recap": "The survivors found themselves inside the windmill, where Rahadin intervened and Zarcharus killed Morgantha. They met Hrulek, who knew Azza from the pit. Gurn killed Ella as part of his bargain with DealsInLuck, and when Hrulek accused him, Azza's Zone of Truth failed to settle it.",
+    "location": "Old Bonegrinder and the road to Vallaki",
+    "npcs": [
+      "Rahadin",
+      "Morgantha",
+      "Ella",
+      "DealsInLuck"
+    ],
+    "highlight": "Hrulek confronted Gurn over Ella's death, but the Zone of Truth gave the party no answer."
+  },
+  {
+    "session": 16,
+    "date": null,
+    "title": "The Bones Were Gone",
+    "recap": "Father Lucien offered Ireena shelter at St. Andral's, then told the party that the church had lost its protection when the saint's bones disappeared. The trail led to Anastrasya, who arrived with vampire spawn and turned Zarcharus against the party with magic. Gurn shot her out of the air as she tried to leave, but she refused to return all the bones.",
+    "location": "St. Andral's Church, Vallaki",
+    "npcs": [
+      "Father Lucien",
+      "Ireena",
+      "Mylus",
+      "Yevgeni",
+      "Anastrasya"
+    ],
+    "highlight": "Gurn shot Anastrasya out of the air and demanded she honour the deal."
+  },
+  {
+    "session": 17,
+    "date": null,
+    "title": "Bacon, Eggs and a Rebellion",
+    "recap": "Father Lucien suggested the Abbot of Krezk might restore the bones' power. At the Blue Water Inn, the Martikovs revealed their ties to the Keepers of the Feather and challenged the party to say whether they meant to free Barovia. The party also heard that the burgomaster kept a book locked behind glass, and Vasili offered to introduce them to Lady Fiona.",
+    "location": "St. Andral's Church and the Blue Water Inn, Vallaki",
+    "npcs": [
+      "Father Lucien",
+      "Urwin Martikov",
+      "Danika Martikov",
+      "Vasili",
+      "An unidentified Vistani woman"
+    ],
+    "highlight": "The Martikovs served breakfast and asked the party to explain whose side they were on."
+  },
+  {
+    "session": 18,
+    "date": null,
+    "title": "A Coup at the Festival",
+    "recap": "Lady Fiona offered the party titles, property and access to the burgomaster's book if they helped remove him. Gurn sounded out Urwin Martikov before the party approached the burgomaster during the festival. An explosion went off, Zarcharus locked the door, and the meeting turned into a fight when the guards threatened to imprison Ireena.",
+    "location": "Wachterhaus and the festival grounds, Vallaki",
+    "npcs": [
+      "Lady Fiona Wachter",
+      "Vasili",
+      "Sergio",
+      "Urwin Martikov",
+      "Ireena",
+      "The burgomaster"
+    ],
+    "highlight": "An explosion outside turned the party's private audience into a fight behind a locked door."
+  },
+  {
+    "session": 19,
+    "date": null,
+    "title": "Strahd's Diary Swallowed Us",
+    "recap": "The party recovered the burgomaster's book, received a manor and titles, and found the festival had left guards and civilians dead. When Zarcharus opened the book, it pulled them inside, where Azlan told them he had taught Strahd magic and that part of him was trapped in the book. The party witnessed Rahadin training a young Strahd, the campaign against the silver dragon's knights, and Sergei's arrival at Ravenloft.",
+    "location": "Vallaki and the memories inside the Tome of Strahd",
+    "npcs": [
+      "Lady Fiona Wachter",
+      "Elliot",
+      "Azlan",
+      "Strahd (in the tome)",
+      "Rahadin (in the tome)",
+      "Alek (in the tome)",
+      "Sergei (in the tome)"
+    ],
+    "highlight": "Zarcharus opened the book and the whole party fell into Strahd's memories."
+  },
+  {
+    "session": 20,
+    "date": null,
+    "title": "Dinner by Invitation",
+    "recap": "Rahadin delivered Strahd's dinner invitation and explained the guest rules, which forbade theft and violence. Azza and Zarcharus learned that the presence reaching out to them in dreams was the Huntress. The party stopped at Boondaego's newly opened thrift shop before leaving Vallaki for the Huntress's cave.",
+    "location": "Vallaki and the road to the Huntress's fane",
+    "npcs": [
+      "Rahadin",
+      "Boondaego",
+      "The Huntress"
+    ],
+    "highlight": "The party left town with both a dinner invitation from Strahd and directions to the werewolf den."
+  },
+  {
+    "session": 21,
+    "date": null,
+    "title": "Trevor and the Werewolf Hill",
+    "recap": "The party found a militia camp burned out and its people slaughtered. On the way to the Huntress's fane, they fought a satyr and attacking trees, after which Hrulek summoned Trevor the war camel. At the top of the hill, they found a massive wolf ahead of them and hags gathering lightning behind them.",
+    "location": "The militia camp and the approach to the Huntress's fane",
+    "npcs": [
+      "An unidentified woman at the militia camp",
+      "The satyr",
+      "Trevor",
+      "The Huntress",
+      "The alpha wolf",
+      "The hags"
+    ],
+    "highlight": "Hrulek summoned a war camel just before the party headed deeper into werewolf territory."
+  },
+  {
+    "session": 22,
+    "date": null,
+    "title": "The Huntress Took Back Her Hill",
+    "recap": "The party fought werewolves and hags for control of the hill while poisonous gas closed in around them. Gurn fell and Tuulikki kept fighting as Azza channelled the fane, vaporising the last hag and restoring the Huntress's protection. Strahd held Volenta back from the battle, and the party later found him waiting in Ravenloft's courtyard.",
+    "location": "The Huntress's fane and Castle Ravenloft",
+    "npcs": [
+      "The Huntress",
+      "Ireena",
+      "Strahd",
+      "Volenta",
+      "Vasili",
+      "Rahadin"
+    ],
+    "highlight": "Azza channelled the fane, and a wall of green energy marked the Huntress's return."
+  },
+  {
+    "session": 23,
+    "date": null,
+    "title": "Dinner and a Show",
+    "recap": "Strahd welcomed the party into Ravenloft, warned them that the castle could defend itself, and let Azza handle the Sunsword's hilt under threat of pursuit if it left the castle. In the crypts, Gurn saw Zarr undead and obeying Strahd's commands. The visit also included a theatre performance in which Strahd sang about the party belonging to him.",
+    "location": "Castle Ravenloft",
+    "npcs": [
+      "Strahd",
+      "Rahadin",
+      "Anastrasya",
+      "Escher",
+      "Volenta",
+      "Ireena"
+    ],
+    "highlight": "Gurn found Zarr in the crypts and promised to come back for him."
+  },
+  {
+    "session": 24,
+    "date": null,
+    "title": "Three Seconds Before Disaster",
+    "recap": "Vasili showed the party a stopwatch that could teleport anyone close to him if they needed to escape. They slipped past vampire spawn, destroyed an amber golem, and found Ezmerelda and other prisoners in the dungeon. Anastrasya and Volenta arrived, and Ireena revealed where the party was hiding after Anastrasya struck her with Power Word Pain.",
+    "location": "Castle Ravenloft passages and dungeon",
+    "npcs": [
+      "Vasili",
+      "Ezmerelda",
+      "Perrywimple",
+      "Ireena",
+      "Anastrasya",
+      "Volenta"
+    ],
+    "highlight": "The party's cover broke just as both consorts stood between them and the way out."
+  },
+  {
+    "session": 25,
+    "date": null,
+    "title": "Light in Sergei's Crypt",
+    "recap": "The party reached the crypts while Strahd battled the knights of Argynvostholt. Zarcharus got past Rahadin and placed the sword in Sergei's hand, where it began to charge. Rahadin fatally wounded Gurn, and the survivors escaped as vampire spawn poured from the walls.",
+    "location": "Ravenloft crypts",
+    "npcs": [
+      "Strahd",
+      "Rahadin",
+      "Vladimir Horngaard",
+      "The knights of Argynvostholt",
+      "Sergei's remains"
+    ],
+    "highlight": "The sword began to charge in Sergei's hand while the party fought to get out."
+  },
+  {
+    "session": 26,
+    "date": null,
+    "title": "From a Robot Sheriff to a Siege",
+    "recap": "Korino introduced himself as a Dawngreeter of Lathander sent by Father Lucien. In Yellowwood, he pinned a mechanical sheriff with magic, and Zarcharus struck it down before it exploded. The party was swept into another land, where they met defenders facing an undead siege and Hrulek blew apart an ogre skeleton.",
+    "location": "Yellowwood and Castle Dragonhold, Falkovnia",
+    "npcs": [
+      "The mechanical sheriff",
+      "The Yellowwood bartender",
+      "The defenders of Castle Dragonhold"
+    ],
+    "highlight": "Hrulek's critical hit blew apart the first ogre skeleton in a burst of fire and radiance."
+  },
+  {
+    "session": 27,
+    "date": null,
+    "title": "The Hunt Through the Jungle",
+    "recap": "After fighting on a foreign battlefield, the party was thrown into a jungle where Borke and his hunters pursued them. They fought through the hunt and landed among grapevines back in Barovia. They learned that three gems could help consecrate the fanes just as vines began closing around the house ahead.",
+    "location": "Falkovnia, Borke's jungle estate, and a Barovian vineyard",
+    "npcs": [
+      "Borke",
+      "The Huntress"
+    ],
+    "highlight": "The party escaped a jungle hunt only to find the vines moving towards them back in Barovia."
+  },
+  {
+    "session": 28,
+    "date": null,
+    "title": "A Gem in the Wine",
+    "recap": "The party fought off a druid and took shelter in the winery, where they learned the people inside were at war with the druids and Baba Yaga. They watched the vines close around the building and saw Strahd arrive on his flaming nightmare. Korino retrieved a gem from the wine and calmed it when it tried to pull away.",
+    "location": "The winery and vineyard",
+    "npcs": [
+      "Luther",
+      "Tara Nova",
+      "Strahd",
+      "The attacking druid"
+    ],
+    "highlight": "Korino dived into the wine to catch a gem that fought to get away."
+  },
+  {
+    "session": 29,
+    "date": null,
+    "title": "Threads in the Cauldron",
+    "recap": "The party fought off the druid and fled down roads hemmed in by vines. They learned that the gems held the gods' power and could consecrate the fanes, and that Madam Eva was the Weaver. They watched two women draw threads from a cauldron and read them like possible futures before choosing the road to the Vistani camp.",
+    "location": "The vineyard roads and the route to the Vistani camp",
+    "npcs": [
+      "The attacking druid",
+      "The Weaver",
+      "The Seeker"
+    ],
+    "highlight": "The party saw possible futures read from threads drawn out of a cauldron."
+  },
+  {
+    "session": 30,
+    "date": null,
+    "title": "Something Followed the Gem",
+    "recap": "A boneclaw and two invisible mastiffs ambushed the party on the road, and the boneclaw tried to drag Korino away for his gem. The party fought it off and reached the Vistani camp after dark. There they heard that Rahadin had led reprisals in Barovia village, that Anastrasya had taken charge of Vallaki, and that Elliot was organising a rebellion.",
+    "location": "The road to the Vistani camp and the camp itself",
+    "npcs": [
+      "The boneclaw",
+      "The invisible mastiffs",
+      "The Vistani hosts"
+    ],
+    "highlight": "The boneclaw burned to dust and smoke but warned the party it would be back."
+  },
+  {
+    "session": 31,
+    "date": null,
+    "title": "A Dragon Over Berez",
+    "recap": "The Weaver gave Korino a vial tied to a thread of fate, and the party set out for the flooded ruins of Berez. A skeletal dragon with a pulsing green-black heart flew overhead, carrying an older woman who laughed and said the party was doing her work for her. The boneclaw and its mastiffs ambushed them in the ruins, and the dragon swept back to breathe poison over the party.",
+    "location": "Vistani camp and the ruins of Berez",
+    "npcs": [
+      "The Weaver",
+      "Vasili",
+      "Baba Yaga",
+      "The skeletal dragon",
+      "The boneclaw",
+      "The shadow mastiffs"
+    ],
+    "highlight": "The party drove off the boneclaw, then looked up into the dragon's poison breath."
+  },
+  {
+    "session": 32,
+    "date": null,
+    "title": "One Log at a Time",
+    "recap": "The party survived the dragon's poison breath and sheltered in a Tiny Hut to recover. On the way to the fane, they picked their way across logs through swamp water while will-o'-wisps and vine blights wore them down. Azza noticed the dragon slipping into the Ethereal Plane before it circled back and a fireball hit the party.",
+    "location": "Berez swamp, on the approach to the fane",
+    "npcs": [
+      "The skeletal dragon",
+      "Will-o'-wisps",
+      "Vine blights"
+    ],
+    "highlight": "Azza spotted the dragon crossing into the Ethereal Plane while the party was still struggling to cross the bog."
+  },
+  {
+    "session": 33,
+    "date": null,
+    "title": "The House Grew Legs",
+    "recap": "The Weaver drew the party into her domain and gave each of them a piece of gold that covered them in protective magic. Back at the fane, the house sprouted chicken legs and lashed out with branches while the dragon guarded the tree. The Weaver helped destroy the dragon, but the party went down in the fighting, and Zarcharus gave up his life to let his soul pass beyond the mists.",
+    "location": "The Weaver's domain and the fane at Berez",
+    "npcs": [
+      "The Weaver",
+      "Baba Yaga",
+      "The skeletal dragon",
+      "The walking house",
+      "Konshu"
+    ],
+    "highlight": "Hrulek reached for a potion he'd stolen from Strahd and discovered it was a mimic."
+  },
+  {
+    "session": 34,
+    "date": null,
+    "title": "One Roll to Save the Fane",
+    "recap": "Korino got back up on a natural 20 and crawled to the fane, restoring it with Baba Yaga standing over him. Vasili revealed himself as Strahd, struck Hrulek, beheaded Baba Yaga, and took Ireena. The party met Roger amid the chaos, and Argynvost's voice stirred when the Sunsword touched the dead dragon's skull.",
+    "location": "The fane at Berez",
+    "npcs": [
+      "Baba Yaga",
+      "Strahd",
+      "Ireena",
+      "Argynvost"
+    ],
+    "highlight": "Korino rolled a natural 20 and reached the fane from the ground."
+  },
+  {
+    "session": 35,
+    "date": null,
+    "title": "Snow on the Road to Krezk",
+    "recap": "The party passed the winery as the temperature dropped and snow began to fall. They learned that Argynvost had defended the land against Strahd and that his old stronghold might offer a way to restore him. At Krezk, Korino spoke for the group despite notices naming Azza and Hrulek, and the burgomaster received them at his manor.",
+    "location": "Road to Krezk and the burgomaster's manor",
+    "npcs": [
+      "Godfrey",
+      "The Weaver",
+      "Burgomaster Boris"
+    ],
+    "highlight": "Korino got the party into Krezk even though two of them were wanted."
+  },
+  {
+    "session": 36,
+    "date": null,
+    "title": "A Feast and a Warning",
+    "recap": "Burgomaster Boris fed the party and asked for help. They met Elliot, the courier Arik, and Kasimir, who told them he wanted revenge on Rahadin for killing his family. After hearing troubling reports about the Abbot's work, the party picked up supplies and a cart before heading to the abbey.",
+    "location": "Krezk",
+    "npcs": [
+      "Burgomaster Boris",
+      "Elliot",
+      "Arik",
+      "Kasimir",
+      "Donny",
+      "Boondaego"
+    ],
+    "highlight": "The dusk elf the party feared might be Rahadin turned out to be Kasimir, who wanted Rahadin dead."
+  },
+  {
+    "session": 37,
+    "date": null,
+    "title": "The Abbot's Test",
+    "recap": "The party met the Abbot and heard that he would grant the Sunsword's full power to someone who passed his test. Roger found stairs behind the altar before the Abbot used a command spell to force him out. The Abbot spoke of an army and further sacrifices, so the party decided to investigate after dark.",
+    "location": "Abbey of Saint Markovia, Krezk",
+    "npcs": [
+      "The Abbot",
+      "The abbey's attendants"
+    ],
+    "highlight": "Roger found a staircase behind the altar before the Abbot ordered him out by magic."
+  },
+  {
+    "session": 38,
+    "date": null,
+    "title": "Scales in the Cellar",
+    "recap": "The party slipped back into the abbey at night and found the Abbot performing a ritual downstairs. The ritual tried to tear Argynvost's soul out of the Sunsword, and the party threw themselves into stopping it. The Abbot raised a Wall of Force, and the party fought to weaken him enough for the sword to take his soul.",
+    "location": "Cellars beneath the Abbey of Saint Markovia",
+    "npcs": [
+      "The Abbot",
+      "Argynvost",
+      "The abbey's attendants"
+    ],
+    "highlight": "The party kept Argynvost's soul in the Sunsword."
+  },
+  {
+    "session": 39,
+    "date": null,
+    "title": "The Sword Took the Abbot",
+    "recap": "Celestial spirits joined the fight as the abbey started collapsing overhead. Korino broke the Abbot's tether, Roger blasted him back into the stairs, and a final counterspell stopped a sphere of death before the Sunsword consumed him. The party grabbed the sword and ran for the exit.",
+    "location": "Abbey of Saint Markovia, Krezk",
+    "npcs": [
+      "The Abbot",
+      "The celestial spirits"
+    ],
+    "highlight": "The Sunsword flared with the brightest light Roger had ever seen."
+  },
+  {
+    "session": 40,
+    "date": null,
+    "title": "Ram the Vampire Swarm",
+    "recap": "The party escaped the collapsing abbey and found Krezk under attack by vampire spawn. They fought alongside Boondaego and Ezmerelda while Escher and Anastrasya interfered with their escape. A counterspell saved the party from domination, and they rammed the swarm with their cart as Anastrasya's fireball hit the street and killed children.",
+    "location": "Krezk streets",
+    "npcs": [
+      "Boondaego",
+      "Ezmerelda",
+      "Burgomaster Boris",
+      "Escher",
+      "Anastrasya",
+      "Vampire spawn"
+    ],
+    "highlight": "The party drove the cart straight into the vampire swarm."
+  },
+  {
+    "session": 41,
+    "date": null,
+    "title": "The Mists Closed the Square",
+    "recap": "As the party tried to reach the gates, the mists rolled into the square and Strahd appeared with Rahadin, Escher, and Anastrasya. Korino used his last counterspell on a wall of fire, but Rahadin's arrows found their marks and Anastrasya dominated Roger. Hrulek got clear on Trevor while the others scattered, leaving Roger trapped.",
+    "location": "Krezk market square and gates",
+    "npcs": [
+      "Strahd",
+      "Rahadin",
+      "Escher",
+      "Anastrasya",
+      "Boondaego",
+      "Elliot",
+      "Trevor"
+    ],
+    "highlight": "Trevor held off the animated cart long enough for Hrulek to get clear."
+  },
+  {
+    "session": 42,
+    "date": null,
+    "title": "Boondaego Went Back In",
+    "recap": "The party regrouped in the ruins of Krezk and found Roger bound in magical ropes, with Boondaego being pressed to execute him. Boondaego fought Strahd alongside Roger, animating mithril railway spikes as the others tried to get clear. Strahd's chain lightning tore through the party as they ran for the exit, and Boondaego went back into the fight and died.",
+    "location": "Ruins of Krezk",
+    "npcs": [
+      "Strahd",
+      "Boondaego",
+      "Ezmerelda"
+    ],
+    "highlight": "Strahd rolled two natural 1s in a row, but his next blows brought Boondaego down."
+  },
+  {
+    "session": 43,
+    "date": null,
+    "title": "The Knights Wouldn't Let Go",
+    "recap": "The party left Krezk on foot and rested while wolves circled their shelter. Godfrey guided them into Argynvostholt and showed them a route to the beacon, where they could release Argynvost's soul. Garrick tried to possess them on the way up, and the session ended with the party fighting Vladimir while trying to keep Godfrey safe.",
+    "location": "Road from Krezk and Argynvostholt",
+    "npcs": [
+      "Godfrey",
+      "Eldith",
+      "Garrick",
+      "Vladimir Horngaard",
+      "Argynvost"
+    ],
+    "highlight": "The party's attempt to reach the beacon turned into a fight with Vladimir."
+  },
+  {
+    "session": 44,
+    "date": null,
+    "title": "The Silver Beacon",
+    "recap": "The party brought Vladimir down with the Sunsword, and Argynvost appeared in a beam of silver light. Vladimir reformed, apologised, and gave them the Holy Symbol of Ravenkind as the beacon lit. Later, Ludmilla approached Azza privately, offered help against Strahd, and gave him an earring he could use to contact her.",
+    "location": "Argynvostholt",
+    "npcs": [
+      "Godfrey",
+      "Vladimir Horngaard",
+      "Argynvost",
+      "Ludmilla"
+    ],
+    "highlight": "Argynvost appeared, Vladimir apologised, and the beacon shone again."
+  },
+  {
+    "session": 45,
+    "date": null,
+    "title": "The Wedding in the Book",
+    "recap": "The party returned to the Tome of Strahd, where Korino took Sergei's place in a memory and witnessed Strahd kill him on his wedding day. They saw Tatyana leap from a balcony and heard Azlan name Vampyr as the power in the Amber Temple. Back on the road, they helped Ivana repair her cart and considered taking a boat to Rudolf van Richten.",
+    "location": "The Tome of Strahd and the road towards Vallaki",
+    "npcs": [
+      "Azlan",
+      "Strahd (in the memory)",
+      "Sergei (in the memory)",
+      "Tatyana (in the memory)",
+      "Ivana"
+    ],
+    "highlight": "Korino lived through Sergei's last moments from inside the memory."
+  },
+  {
+    "session": 46,
+    "date": null,
+    "title": "The Banana Boat",
+    "recap": "The party crossed the lake on a banana boat and fought undead that climbed aboard. Roger dived in to pull Ezmerelda back onto the deck. At Rudolf van Richten's tower, they got past his traps and found him in his lab.",
+    "location": "The lake and Rudolf van Richten's tower",
+    "npcs": [
+      "Ezmerelda",
+      "Godfrey",
+      "Rudolf van Richten"
+    ],
+    "highlight": "Roger dived into the lake to drag Ezmerelda back aboard."
+  },
+  {
+    "session": 47,
+    "date": null,
+    "title": "The Accountant in the Armour",
+    "recap": "The party took stock and learned that breaking Strahd's connection to Vampyr at the Amber Temple might make him killable. Rudolf offered gear, including a suit of half plate inhabited by an accountant named Jefferson. Hrulek shoved Azza onto a chest, which turned out to have teeth.",
+    "location": "Rudolf van Richten's laboratory",
+    "npcs": [
+      "Rudolf van Richten",
+      "Ezmerelda",
+      "Jefferson"
+    ],
+    "highlight": "Azza picked a fight with the chest after it bit him."
+  },
+  {
+    "session": 48,
+    "date": null,
+    "title": "Two Tyrannosaurs in the Temple",
+    "recap": "The party travelled towards Mount Baratok, and Roger turned down an offer of power over ice or fire. Amber defenders dropped from the ceiling, and the party fought back with two polymorphed tyrannosaurs. Roger finished the last two defenders with his pistols, and the building started to shake.",
+    "location": "Amber ruin near Mount Baratok",
+    "npcs": [
+      "Ezmerelda",
+      "The amber defenders"
+    ],
+    "highlight": "Two tyrannosaurs gave the party enough room to bring down the amber defenders."
+  },
+  {
+    "session": 49,
+    "date": null,
+    "title": "A Deal on the Ledge",
+    "recap": "The party scrambled out of the collapsing ruin, and Ludmilla warned Azza that Strahd knew they were on Mount Baratok. Escher intercepted them on a narrow ledge and offered help finding Azlan in exchange for a favour at the Amber Temple. Hrulek attacked him over his master's death, and Escher teleported ahead to the prison.",
+    "location": "Mount Baratok and the entrance to Azlan's prison",
+    "npcs": [
+      "Ludmilla",
+      "Escher",
+      "A hell hound",
+      "A ghast",
+      "A flesh golem"
+    ],
+    "highlight": "Hrulek charged through the prison doors straight into a fireball."
+  },
+  {
+    "session": 50,
+    "date": null,
+    "title": "The Prison Fed on Us",
+    "recap": "Faces in the prison walls sprayed bile, and the prison drained life from the living to heal its undead. Hrulek smote the lava golem's core, and Ezmerelda turned an enemy's immunity into a vulnerability with her curse. A fireball dropped Ezmerelda and nearly killed Roger before Hrulek cut down the Crimson Executioner.",
+    "location": "Azlan's prison, Mount Baratok",
+    "npcs": [
+      "Ezmerelda",
+      "The lava golem",
+      "The Crimson Executioner"
+    ],
+    "highlight": "Hrulek's critical hit killed the Crimson Executioner as it tried to siphon the party's life."
+  },
+  {
+    "session": 51,
+    "date": null,
+    "title": "Strahd Took the Armour Back",
+    "recap": "The party fought through the prison, and Hrulek pulled Roger clear of the lava creature's jaws. They found the way towards Azlan's crypt just as Strahd swept in. Hrulek's plate flew off him and onto Strahd, leaving the party's frontliner without his armour.",
+    "location": "Azlan's prison, Mount Baratok",
+    "npcs": [
+      "Strahd",
+      "The lava creature"
+    ],
+    "highlight": "Hrulek's own armour flew across the room and fitted itself onto Strahd."
+  },
+  {
+    "session": 52,
+    "date": null,
+    "title": "The First Consort Fell",
+    "recap": "Hrulek used a potion of haste to reach Azlan and bring him back. Escher's fireball dropped Azza and Hrulek, but Azlan drove Strahd out of the mountain and fought him outside. Roger tore out Escher's throat with his werewolf fangs, and the party escaped as the Guardian crumbled.",
+    "location": "Azlan's prison and the slopes of Mount Baratok",
+    "npcs": [
+      "Strahd",
+      "Azlan",
+      "Escher",
+      "The Guardian"
+    ],
+    "highlight": "Roger killed Escher, the first of Strahd's consorts the party defeated."
+  },
+  {
+    "session": 53,
+    "date": null,
+    "title": "The Kettle Wanted a Promotion",
+    "recap": "At Rudolf's tower, the party learned that a physical link bound a dark god to its chosen and that breaking it could strip away immortality. They explored Rudolf's brewery and kitchen, where they met a talking kettle, and discussed a rabbit suit for Roger. By the end of the visit, they had agreed to go into Vallaki as a circus.",
+    "location": "Rudolf van Richten's tower",
+    "npcs": [
+      "Rudolf van Richten",
+      "Tiffany",
+      "The talking kettle"
+    ],
+    "highlight": "The party met an abusive kettle whose ambition was to become a teapot."
+  },
+  {
+    "session": 54,
+    "date": null,
+    "title": "The Circus Came to Vallaki",
+    "recap": "The party disguised themselves as a travelling circus, brought their gear into Vallaki, and set up in the town square. They planned to draw in guards and wealthy spectators, with Elliot mapping an escape route. Two natural 20s helped fill the seats, and Anastrasya arrived with six courtiers just as the show was getting under way.",
+    "location": "Rudolf van Richten's tower and Vallaki town square",
+    "npcs": [
+      "Rudolf van Richten",
+      "Ezmerelda",
+      "Elliot",
+      "Anastrasya",
+      "Anastrasya's courtiers"
+    ],
+    "highlight": "The circus filled its seats and drew a much more dangerous guest than the guards it was meant to attract."
+  },
+  {
+    "session": 55,
+    "date": null,
+    "title": "Blood Under the Big Top",
+    "recap": "The circus performance turned into a fight when Anastrasya hit the party with Circle of Death. They saw her necklace absorb radiant power, and a Wall of Fire severed a rope while Ezmerelda was still on it. Hrulek bloodied Anastrasya, but a pool of blood from a slain spawn rose into an elemental.",
+    "location": "The circus tent, Vallaki",
+    "npcs": [
+      "Anastrasya",
+      "Ezmerelda",
+      "Anastrasya's courtiers",
+      "The blood elemental"
+    ],
+    "highlight": "Ezmerelda rode the falling rope after a Wall of Fire cut it."
+  },
+  {
+    "session": 56,
+    "date": null,
+    "title": "One Hit Point and a Sunsword",
+    "recap": "The Sunsword shattered a ruby in Anastrasya's necklace, and she tried to flee the circus. Hrulek gave chase on Trevor, and Anastrasya challenged the party to meet her at the burgomaster's house before teleporting away. Back in the tent, Death Ward left Roger on one hit point, and he cut the blood elemental in two.",
+    "location": "The circus tent and surrounding streets, Vallaki",
+    "npcs": [
+      "Anastrasya",
+      "Ezmerelda",
+      "Trevor",
+      "The blood elemental"
+    ],
+    "highlight": "Roger ducked the elemental's blow on one hit point and split it with the Sunsword."
+  },
+  {
+    "session": 57,
+    "date": null,
+    "title": "The Mirrors Turned Us Around",
+    "recap": "The party pursued Anastrasya into the burgomaster's house and ran into vampire spawn, an amber golem, and a grey ooze. Enchanted mirrors turned the party's attacks against one another, but Circle of Power kept Hrulek from taking the damage. Ezmerelda broke two mirrors while Korino held the door.",
+    "location": "The burgomaster's mansion, Vallaki",
+    "npcs": [
+      "Anastrasya",
+      "Ezmerelda",
+      "Jefferson",
+      "The amber golem",
+      "The grey ooze"
+    ],
+    "highlight": "Hrulek rolled two natural 20s, followed by two natural 1s from the amber golem."
+  },
+  {
+    "session": 58,
+    "date": null,
+    "title": "A Smite Through the Wall",
+    "recap": "Roger rushed Anastrasya with the Sunsword, and Hrulek channelled a divine smite through the blow. The strike dropped the Wall of Force and badly wounded her, but Roger then had to survive Disintegrate at close range. The party regrouped and followed her to the ballroom.",
+    "location": "The burgomaster's mansion, Vallaki",
+    "npcs": [
+      "Anastrasya",
+      "Ezmerelda",
+      "The Crimson Courtier",
+      "A figure who appeared to be Vasili"
+    ],
+    "highlight": "Roger's critical hit and Hrulek's smite brought down the Wall of Force in one strike."
+  },
+  {
+    "session": 59,
+    "date": null,
+    "title": "The Last Waltz",
+    "recap": "Anastrasya offered the party a chance to leave, and they stayed to fight. Fireballs repeatedly dropped Roger and Hrulek, while enchanted organ music forced Ezmerelda to dance until Azza helped her break free. As Anastrasya leaned in for the killing bite, Roger pulled her onto his blade, and they both collapsed.",
+    "location": "Ballroom of the burgomaster's mansion, Vallaki",
+    "npcs": [
+      "Anastrasya",
+      "Ezmerelda",
+      "The Crimson Courtier",
+      "The amber golem"
+    ],
+    "highlight": "Roger's last words to Anastrasya were \"I told you I was going to kill you\"."
+  },
+  {
+    "session": 60,
+    "date": null,
+    "title": "A Dawn in the Doorway",
+    "recap": "The party fled the mansion as vampire spawn poured out of the walls, only to find Strahd waiting outside. A beam of sunlight broke through, Zadkiel descended, and the Sunsword flew into his hand as Strahd scattered into bats. Elliot brought news of unrest across Vallaki, and the party chose to help the children trapped in the burning orphanage first.",
+    "location": "The burgomaster's mansion and surrounding streets, Vallaki",
+    "npcs": [
+      "Strahd",
+      "Ezmerelda",
+      "Elliot",
+      "Vampire spawn"
+    ],
+    "highlight": "Zadkiel descended into the light, took the Sunsword in hand, and said, \"BE NOT AFRAID\"."
+  },
+  {
+    "session": 61,
+    "date": null,
+    "title": "Fire at the Orphanage, a Noose at the Church",
+    "recap": "The party rushed into the burning orphanage and carried children out as the roof came down. At St. Andral's, they found armed men preparing to hang a priest, and Azza tried to talk them out of it. The assassin kicked away the stool, Zadkiel cut the rope, and Korino dragged the priest's limp body clear of the fight.",
+    "location": "The orphanage and St. Andral's Church, Vallaki",
+    "npcs": [
+      "Elliot",
+      "The priest at St. Andral's",
+      "The assassin",
+      "The mage"
+    ],
+    "highlight": "Korino shielded a child as the orphanage roof collapsed."
+  },
+  {
+    "session": 62,
+    "date": null,
+    "title": "A Republic and a Pair of Plate Boots",
+    "recap": "The party negotiated with Lady Fiona Wachter and secured her support and resources for an independent Vallaki led by Elliot. Zadkiel refused to sign the agreement, but Hrulek got the armour it promised him. Before leaving town, the party had Roger's body turned to stone in a final pose.",
+    "location": "Wachterhaus and Vallaki",
+    "npcs": [
+      "Lady Fiona Wachter",
+      "Elliot",
+      "Godfrey"
+    ],
+    "highlight": "Hrulek got a new suit of plate written into the deal for Vallaki's independence."
+  },
+  {
+    "session": 63,
+    "date": null,
+    "title": "The Sunsword Bar and Grill",
+    "recap": "Zadkiel found himself in a pub inside the Sunsword, where former wielders welcomed him and Roger asked about Ezmerelda. Azza woke with a moon token, and Selûne restored his power after confronting him about his service. On the road, a warning came through as static just before vampire spawn dragged Godfrey off the path.",
+    "location": "The Sunsword Bar and Grill and the road to the Seeker's fane",
+    "npcs": [
+      "Gias",
+      "Orest Harner",
+      "Selûne",
+      "Godfrey",
+      "Vampire spawn"
+    ],
+    "highlight": "Zadkiel walked into a pub full of dead Sunsword wielders and found Roger at the bar."
+  },
+  {
+    "session": 64,
+    "date": null,
+    "title": "The Wolf Beneath the Hill",
+    "recap": "The party fought off the spawn at the crossroads and repaired a broken cart for travellers. At the fog-covered hill, Strahd addressed Zadkiel as his brother and left with Rahadin. Volenta erupted from the earth as a giant werewolf, and Azza answered by becoming an enormous wererat.",
+    "location": "The crossroads and the approach to the Seeker's fane",
+    "npcs": [
+      "Godfrey",
+      "The Huntress",
+      "Strahd",
+      "Rahadin",
+      "Volenta"
+    ],
+    "highlight": "A thirty-foot werewolf met a twenty-foot wererat at the foot of the hill."
+  },
+  {
+    "session": 65,
+    "date": null,
+    "title": "Mercy Ran Out",
+    "recap": "The party fought Volenta and her pack, and Korino survived a brutal set of attacks thanks to Death Ward and Jefferson's protection. Ludmilla appeared beside Zadkiel as the others gave chase, and Korino's attempt to negotiate gave way to another fight. The party badly wounded Ludmilla, but she teleported away.",
+    "location": "The hill below the Seeker's fane",
+    "npcs": [
+      "Volenta",
+      "Ludmilla",
+      "Ezmerelda",
+      "Jefferson"
+    ],
+    "highlight": "Three attacks tore open Korino's chest, but Death Ward and Jefferson kept him alive."
+  },
+  {
+    "session": 66,
+    "date": null,
+    "title": "No Truth Is Easy",
+    "recap": "The party confronted what had happened with Ludmilla and tried to push through the Seeker's fog by admitting truths they wished were false. Hrulek admitted that part of him was glad his master's death had given him a reason to grow stronger. The Seeker wrapped him in a cloak and drew him into the tree, which returned to life.",
+    "location": "The Seeker's fane",
+    "npcs": [
+      "The Seeker",
+      "Ezmerelda",
+      "Godfrey"
+    ],
+    "highlight": "Hrulek's admission took him through the fog to the Seeker, who gave him a cloak that revealed creatures' strengths and weaknesses."
+  },
+  {
+    "session": 67,
+    "date": null,
+    "title": "Two Goats for the Mountain",
+    "recap": "The party returned to Vallaki for warm clothes, climbing gear, and supplies for the Amber Temple. They bought two goats to distract the mountain's giant birds and quickly found that Prepotente liked Hrulek while Bleatoncé took some wrangling from Zadkiel. With the goats in tow, they set out for Tsolenka Pass.",
+    "location": "Vallaki and the road to Tsolenka Pass",
+    "npcs": [
+      "Elliot",
+      "Lady Fiona Wachter",
+      "Father Malovich",
+      "Prepotente",
+      "Bleatoncé"
+    ],
+    "highlight": "Zadkiel found out that the goat he was trying to wrangle was a fiend with a particular dislike of celestials."
+  },
+  {
+    "session": 68,
+    "date": null,
+    "title": "A Wall Across the Pass",
+    "recap": "Rahadin and Ludmilla attacked the party on the way to the pass, and the goats were caught up in the fighting. Ludmilla divided the field with a Wall of Force while Rahadin kept firing. Hrulek bolstered the party, and Korino hit Rahadin with silver and forced him to resist Synaptic Static.",
+    "location": "The approach to Tsolenka Pass",
+    "npcs": [
+      "Rahadin",
+      "Ludmilla",
+      "Godfrey",
+      "Prepotente",
+      "Bleatoncé"
+    ],
+    "highlight": "Ludmilla split the battlefield with a Wall of Force while Rahadin fired across it."
+  },
+  {
+    "session": 69,
+    "date": null,
+    "title": "The Bridge Was a Lie",
+    "recap": "The party found a frozen traveller clutching a note about the Amber Lords. Two ghosts warned them that the bridge ahead was an illusion, and Hrulek confirmed it by testing the crossing with his glaive. Prepotente fell from the safer route, while Korino used a twinned Vortex Warp to save himself and Godfrey.",
+    "location": "Snowy ravine on Tsolenka Pass",
+    "npcs": [
+      "Godfrey",
+      "Two ghosts at the crossing",
+      "Prepotente"
+    ],
+    "highlight": "Hrulek tested the bridge with his glaive and discovered the ghosts had been telling the truth."
+  },
+  {
+    "session": 70,
+    "date": null,
+    "title": "The Mountain Screamed",
+    "recap": "In a blizzard, the party approached what looked like a bird guarding an egg, then realised it was a distressed youngster. A much larger black creature they had mistaken for part of the mountain rose and attacked. The party brought two polymorphed tyrannosaurs into the fight, and Azza turned the young vrock so they could focus on the larger one.",
+    "location": "The mountain cliffs of Tsolenka Pass",
+    "npcs": [
+      "Godfrey",
+      "Ezmerelda",
+      "The adult vrock",
+      "The young vrock"
+    ],
+    "highlight": "The party realised the mountain had wings when the adult vrock screamed and blew snow across the cliffs."
+  },
+  {
+    "session": 71,
+    "date": null,
+    "title": "Tea Behind the Amber Doors",
+    "recap": "Hrulek charged the adult vrock on Trevor, and Zadkiel flew up to finish it with the Sunsword. The party climbed to the Amber Temple and passed through thick doors that opened without a touch. Inside, they met Vryin, who offered tea and warned them to keep their wits about them.",
+    "location": "Tsolenka Pass and the Amber Temple entrance",
+    "npcs": [
+      "The adult vrock",
+      "Trevor",
+      "Rahadin",
+      "Vryin"
+    ],
+    "highlight": "After a fight in a blizzard, the party stepped into the Amber Temple and was offered a cup of tea."
+  },
+  {
+    "session": 72,
+    "date": null,
+    "title": "The Price of a Unicorn",
+    "recap": "The party explored the temple's strange rooms and encountered mirrors that brought alternate versions of Azza into play. Korino broke the mirrors and lost a memory, but the Azza they were trying to recover did not return. Hrulek threw Azza at a shadow spear pinning a unicorn, freeing it but leaving Azza changed by the pain the spear carried.",
+    "location": "The Amber Temple's mirror chambers and unicorn cavern",
+    "npcs": [
+      "Vryin",
+      "The alternate Azzas",
+      "The trapped unicorn"
+    ],
+    "highlight": "The unicorn was freed and vowed to protect Azza after seeing what the spear had done to him."
+  },
+  {
+    "session": 73,
+    "date": null,
+    "title": "A Wish in the Ashes",
+    "recap": "The party passed through a market where goods cost memories, joy, or years of life. Korino traded 36 years for the Time Stealer's Hourglass. Rahadin and Ludmilla ambushed them deeper inside, and when Ludmilla reduced Hrulek to dust despite Korino's counterspell, Korino used Wish.",
+    "location": "The Amber Temple's market and the approach to Vampyr's tomb",
+    "npcs": [
+      "The ghostly merchants",
+      "Rahadin",
+      "Ludmilla",
+      "A nosferatu"
+    ],
+    "highlight": "Korino said, \"I WISH to restore my party to their state from this dawn!\""
+  },
+  {
+    "session": 74,
+    "date": null,
+    "title": "The Black Dawn",
+    "recap": "Korino's wish brought him before a black sun, where Nhazul offered to answer it in exchange for Korino's service after death. Korino agreed, Hrulek reformed from ash as undead, and the darkness was carved out of Azza's soul. The party pressed on to a chamber where a figure resembling Hrulek's dead master urged him to serve Vampyr.",
+    "location": "Nhazul's black dawn and the approach to Vampyr's tomb",
+    "npcs": [
+      "Nhazul",
+      "Vryin",
+      "The likeness of Hrulek's master",
+      "Barridebs",
+      "Vaius",
+      "Scrippy"
+    ],
+    "highlight": "Hrulek came back from ash, then refused to join Vampyr when his former master's likeness asked him to."
+  },
+  {
+    "session": 75,
+    "date": null,
+    "title": "Over the Edge",
+    "recap": "The fight around Vampyr's tomb spilled across ledges and into the ravine. Azza healed himself through divine intervention and then helped the others, while Death Ward saved Korino after he was dropped off a cliff. Hrulek was thrown over the edge and burst into ash, and the Holy Symbol of Ravenkind held his attacker still for a turn.",
+    "location": "The ravine at Vampyr's tomb",
+    "npcs": [
+      "The likeness of Hrulek's master",
+      "Barridebs",
+      "Vaius",
+      "Scrippy",
+      "The void eater",
+      "Ezmerelda",
+      "Godfrey"
+    ],
+    "highlight": "Ezmerelda hurled the void eater into the ravine after it became a potted plant."
+  },
+  {
+    "session": 76,
+    "date": null,
+    "title": "Ashes at the Tomb",
+    "recap": "The party fought on at the ravine, where Hrulek impaled the likeness of his former master and decapitated Scrippy. Barridebs got away with Hrulek, and the party traced what remained of him into Vampyr's tomb. They slipped inside under cover of invisibility and saw Ludmilla standing over Hrulek while Vampyr rebuked Strahd.",
+    "location": "The ravine and Vampyr's tomb, Amber Temple",
+    "npcs": [
+      "The likeness of Hrulek's master",
+      "Barridebs",
+      "Vaius",
+      "Scrippy",
+      "Godfrey",
+      "Ludmilla",
+      "Rahadin",
+      "Strahd",
+      "Vampyr"
+    ],
+    "highlight": "The party found Hrulek and heard Vampyr reprimand Strahd."
+  },
+  {
+    "session": 77,
+    "date": null,
+    "title": "Meteors and a Wedding Invitation",
+    "recap": "Zadkiel drove Ludmilla back with the Sunsword, but a Wall of Force blocked the party's retreat. A meteor strike killed Zadkiel and reduced Hrulek to ash. Strahd returned Zadkiel's body, offered a potion and a gold button to take the party home, and invited them to his wedding.",
+    "location": "Vampyr's tomb, Amber Temple",
+    "npcs": [
+      "Strahd",
+      "Ludmilla",
+      "Rahadin",
+      "Vampyr",
+      "Ezmerelda"
+    ],
+    "highlight": "Strahd handed the survivors a wedding invitation after returning Zadkiel's body."
+  },
+  {
+    "session": 78,
+    "date": null,
+    "title": "Coffins and a Costly Card",
+    "recap": "The gold button brought the party back to Vallaki, where they woke in separate coffins. They went to Wachterhaus, where a Forcecage trapped Korino at the back entrance. Inside, Azza drew Ruin from a deck and lost his wealth and clothing, while Hrulek drew a card that made him stronger.",
+    "location": "The coffin maker's shop and Wachterhaus, Vallaki",
+    "npcs": [
+      "The coffin maker",
+      "Rudolf van Richten",
+      "Ezmerelda",
+      "Godfrey",
+      "Leeroy"
+    ],
+    "highlight": "Azza drew one card and watched his jacket fall apart around him."
+  },
+  {
+    "session": 79,
+    "date": null,
+    "title": "The Brides in the Attic",
+    "recap": "The party searched Wachterhaus and found a rune-marked chest in an attic guarded by ghosts in wedding dresses. One possessed Zadkiel, and another brought Hrulek down before Zadkiel recovered and brought him back. Downstairs, a bonfire started in a bedroom, and the party fled the burning house for the town hall.",
+    "location": "Wachterhaus and Vallaki town hall",
+    "npcs": [
+      "The spectral brides",
+      "Elliot",
+      "Rudolf van Richten"
+    ],
+    "highlight": "The party opened the attic chest after fighting off a room full of spectral brides."
+  },
+  {
+    "session": 80,
+    "date": null,
+    "title": "The Silver Knights Will Ride",
+    "recap": "Azza used Sending to contact Vladimir, who eventually pledged that the knights would ride. On the road out of Vallaki, Zadkiel urged a group of toll bandits to give up their trade. Farther along, the party found a wrecked cart carrying wedding gifts for Strahd.",
+    "location": "Vallaki and the road to Castle Ravenloft",
+    "npcs": [
+      "Elliot",
+      "Vladimir Horngaard",
+      "Godfrey",
+      "Ezmerelda",
+      "Rudolf van Richten",
+      "The toll bandits",
+      "The Sanikovics' courier"
+    ],
+    "highlight": "Vladimir answered Azza's message with \"We will ride\"."
+  },
+  {
+    "session": 81,
+    "date": null,
+    "title": "Strahd Asked for a Best Man",
+    "recap": "Strahd visited the party on the road and handed out gifts, including a burned book of Lathander for Korino and a family portrait with Sergei's face scratched out for Zadkiel. He spoke privately with Zadkiel and asked him to be his best man. After Strahd left, Hrulek drew Flames from the deck and gained a devil as an enemy.",
+    "location": "Roadside camp on the way to Ravenloft",
+    "npcs": [
+      "Strahd",
+      "The woman in the black wedding gown"
+    ],
+    "highlight": "Strahd asked the man he called his brother to stand beside him at the wedding."
+  },
+  {
+    "session": 82,
+    "date": null,
+    "title": "Sergei Walked Into a Bar",
+    "recap": "Zadkiel returned to the pub inside the Sunsword and asked where Sergei was. The former wielders told him he was Sergei, and the bartender remembered opening the pub with him. Back at camp, a red portal stole Hrulek's bedroll and delivered a note, and the party learned the devil's name was Dissipater.",
+    "location": "The Sunsword Bar and Grill and the roadside camp",
+    "npcs": [
+      "Gias",
+      "Alec Gwillim",
+      "Dissipater",
+      "Godfrey",
+      "Ezmerelda",
+      "Rudolf van Richten"
+    ],
+    "highlight": "The pub went quiet when Zadkiel asked to meet Sergei."
+  },
+  {
+    "session": 83,
+    "date": null,
+    "title": "The Toll Was a Secret",
+    "recap": "The party passed ghostly wedding guests and stopped to help a crying child named Saphire. Zadkiel remembered proposing to Tatyana with his mother's ring. Farther up the road, a card player took secrets from losers, but Azza declined a final hand that might have told him about his father.",
+    "location": "Road to Castle Ravenloft",
+    "npcs": [
+      "Saphire",
+      "Tatyana (in a memory)",
+      "The Vistani card player",
+      "Ghostly wedding guests",
+      "The girl at the crossroads"
+    ],
+    "highlight": "Korino won a question and passed it to Zadkiel, who used it to ask whether his armour had a hidden feature."
+  },
+  {
+    "session": 84,
+    "date": null,
+    "title": "Ropes From the Sky",
+    "recap": "The girl and wolfhounds at the crossroads turned out to be part of an ambush, and erinyes threw down ropes to catch Hrulek. A Bead of Force trapped him and Korino together until Hrulek dispelled it. Zadkiel brought down one attacker, and Korino counterspelled a Circle of Death while Hrulek broke the chains.",
+    "location": "Crossroads on the road to Castle Ravenloft",
+    "npcs": [
+      "The hag child",
+      "The disguised fiends",
+      "The erinyes"
+    ],
+    "highlight": "Hrulek struck an erinys out of the air with a smite."
+  },
+  {
+    "session": 85,
+    "date": null,
+    "title": "The Gates Stood Open",
+    "recap": "The party drove off the remaining attackers after one demanded the return of a glaive they no longer had. They climbed the road to Ravenloft in the rain, and Zadkiel remembered walking it when the hills were green and the sun was out. At the unguarded gates, they saw Strahd waiting with an umbrella beside Ireena in a bright red dress.",
+    "location": "Road to Castle Ravenloft and the Ravenloft courtyard",
+    "npcs": [
+      "The erinyes",
+      "Ezmerelda",
+      "Godfrey",
+      "Alec Gwillim",
+      "Strahd",
+      "Ireena"
+    ],
+    "highlight": "The party reached Ravenloft to find its gates open and Strahd waiting in the rain."
+  },
+  {
+    "session": 89,
+    "date": null,
+    "title": "The Final Supper",
+    "recap": "The party finished the Final Supper at Castle Ravenloft with their guest rights intact. After the meal, they were escorted back to their guest rooms.",
+    "location": "Castle Ravenloft",
+    "npcs": [
+      "Strahd"
+    ],
+    "highlight": "The party made it through the Final Supper without breaking guest rights."
+  }
+]

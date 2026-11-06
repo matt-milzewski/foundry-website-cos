@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Boondaego Spitecraft",
+    "who": "Boondaego sold magical gear and later served as a rebellion general. At Krezk he helped the party fight Strahd and died after going back into the fight.",
+    "status": "dead",
+    "first_met": 8,
+    "relationship": "complicated"
+  },
+  {
+    "name": "Kolyan Indirovich",
+    "who": "The burgomaster of Barovia village separated the sunlight from the Sunsword as part of a bargain to protect Ireena. Strahd killed him in single combat and returned his body to her.",
+    "status": "dead",
+    "first_met": 7,
+    "relationship": "ally"
+  },
+  {
+    "name": "Father Lucien",
+    "who": "The priest at St. Andral's offered Ireena shelter and told the party that the church had lost its protection. The party later heard that he had been killed.",
+    "status": "dead",
+    "first_met": 16,
+    "relationship": "ally"
+  },
+  {
+    "name": "Argynvost",
+    "who": "The silver dragon once defended the land against Strahd. His spirit spoke through the Sunsword and later appeared at Argynvostholt when the beacon was restored.",
+    "status": "dead",
+    "first_met": 34,
+    "relationship": "ally"
+  }
+]

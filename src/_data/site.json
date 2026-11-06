@@ -1,0 +1,21 @@
+{
+  "title": "The Natural 20 Tavern",
+  "url": "https://thenatural20tavern.com",
+  "description": "Home of our D&D table: the next session night, the Curse of Strahd chronicle, the players' wall and the heroes we lost in Barovia.",
+  "tagline": "Welcome, traveller, to Barovia: a land shrouded in mist and ruled by the eternal night.",
+  "foundryUrl": "https://foundry.thenatural20tavern.com",
+  "foundryStatusUrl": "https://foundry.thenatural20tavern.com/api/status",
+  "apiBase": "https://1j3keab8uk.execute-api.ap-southeast-2.amazonaws.com/prod",
+  "worlds": {
+    "curse-of-strahd": "Curse of Strahd",
+    "iron-sun": "Iron Sun"
+  },
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Chronicle", "url": "/chronicle/" },
+    { "label": "Codex", "url": "/codex/" },
+    { "label": "Players", "url": "/players/" },
+    { "label": "In Memoriam", "url": "/in-memoriam/" },
+    { "label": "Campaigns", "url": "/campaigns/" }
+  ]
+}
