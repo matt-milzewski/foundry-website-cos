@@ -1,0 +1,137 @@
+[
+  {
+    "session": 16,
+    "date": null,
+    "title": "The Bones Were Gone",
+    "recap": "Father Lucien offered Ireena shelter at St. Andral's, then told the party that the church had lost its protection when the saint's bones disappeared. The trail led to Anastrasya, who arrived with vampire spawn and turned Zarcharus against the party with magic. Gurn shot her out of the air as she tried to leave, but she refused to return all the bones.",
+    "location": "St. Andral's Church, Vallaki",
+    "npcs": ["Father Lucien", "Ireena", "Mylus", "Yevgeni", "Anastrasya"],
+    "highlight": "Gurn shot Anastrasya out of the air and demanded she honour the deal."
+  },
+  {
+    "session": 17,
+    "date": null,
+    "title": "Bacon, Eggs and a Rebellion",
+    "recap": "Father Lucien suggested the Abbot of Krezk might restore the bones' power. At the Blue Water Inn, the Martikovs revealed their ties to the Keepers of the Feather and challenged the party to say whether they meant to free Barovia. The party also heard that the burgomaster kept a book locked behind glass, and Vasili offered to introduce them to Lady Fiona.",
+    "location": "St. Andral's Church and the Blue Water Inn, Vallaki",
+    "npcs": ["Father Lucien", "Urwin Martikov", "Danika Martikov", "Vasili", "An unidentified Vistani woman"],
+    "highlight": "The Martikovs served breakfast and asked the party to explain whose side they were on."
+  },
+  {
+    "session": 18,
+    "date": null,
+    "title": "A Coup at the Festival",
+    "recap": "Lady Fiona offered the party titles, property and access to the burgomaster's book if they helped remove him. Gurn sounded out Urwin Martikov before the party approached the burgomaster during the festival. An explosion went off, Zarcharus locked the door, and the meeting turned into a fight when the guards threatened to imprison Ireena.",
+    "location": "Wachterhaus and the festival grounds, Vallaki",
+    "npcs": ["Lady Fiona Wachter", "Vasili", "Sergio", "Urwin Martikov", "Ireena", "The burgomaster"],
+    "highlight": "An explosion outside turned the party's private audience into a fight behind a locked door."
+  },
+  {
+    "session": 19,
+    "date": null,
+    "title": "Strahd's Diary Swallowed Us",
+    "recap": "The party recovered the burgomaster's book, received a manor and titles, and found the festival had left guards and civilians dead. When Zarcharus opened the book, it pulled them inside, where Azlan told them he had taught Strahd magic and that part of him was trapped in the book. The party witnessed Rahadin training a young Strahd, the campaign against the silver dragon's knights, and Sergei's arrival at Ravenloft.",
+    "location": "Vallaki and the memories inside the Tome of Strahd",
+    "npcs": ["Lady Fiona Wachter", "Elliot", "Azlan", "Strahd (in the tome)", "Rahadin (in the tome)", "Alek (in the tome)", "Sergei (in the tome)"],
+    "highlight": "Zarcharus opened the book and the whole party fell into Strahd's memories."
+  },
+  {
+    "session": 20,
+    "date": null,
+    "title": "Dinner by Invitation",
+    "recap": "Rahadin delivered Strahd's dinner invitation and explained the guest rules, which forbade theft and violence. Azza and Zarcharus learned that the presence reaching out to them in dreams was the Huntress. The party stopped at Boondaego's newly opened thrift shop before leaving Vallaki for the Huntress's cave.",
+    "location": "Vallaki and the road to the Huntress's fane",
+    "npcs": ["Rahadin", "Boondaego", "The Huntress"],
+    "highlight": "The party left town with both a dinner invitation from Strahd and directions to the werewolf den."
+  },
+  {
+    "session": 21,
+    "date": null,
+    "title": "Trevor and the Werewolf Hill",
+    "recap": "The party found a militia camp burned out and its people slaughtered. On the way to the Huntress's fane, they fought a satyr and attacking trees, after which Hrulek summoned Trevor the war camel. At the top of the hill, they found a massive wolf ahead of them and hags gathering lightning behind them.",
+    "location": "The militia camp and the approach to the Huntress's fane",
+    "npcs": ["An unidentified woman at the militia camp", "The satyr", "Trevor", "The Huntress", "The alpha wolf", "The hags"],
+    "highlight": "Hrulek summoned a war camel just before the party headed deeper into werewolf territory."
+  },
+  {
+    "session": 22,
+    "date": null,
+    "title": "The Huntress Took Back Her Hill",
+    "recap": "The party fought werewolves and hags for control of the hill while poisonous gas closed in around them. Gurn fell and Tuulikki kept fighting as Azza channelled the fane, vaporising the last hag and restoring the Huntress's protection. Strahd held Volenta back from the battle, and the party later found him waiting in Ravenloft's courtyard.",
+    "location": "The Huntress's fane and Castle Ravenloft",
+    "npcs": ["The Huntress", "Ireena", "Strahd", "Volenta", "Vasili", "Rahadin"],
+    "highlight": "Azza channelled the fane, and a wall of green energy marked the Huntress's return."
+  },
+  {
+    "session": 23,
+    "date": null,
+    "title": "Dinner and a Show",
+    "recap": "Strahd welcomed the party into Ravenloft, warned them that the castle could defend itself, and let Azza handle the Sunsword's hilt under threat of pursuit if it left the castle. In the crypts, Gurn saw Zarr undead and obeying Strahd's commands. The visit also included a theatre performance in which Strahd sang about the party belonging to him.",
+    "location": "Castle Ravenloft",
+    "npcs": ["Strahd", "Rahadin", "Anastrasya", "Escher", "Volenta", "Ireena"],
+    "highlight": "Gurn found Zarr in the crypts and promised to come back for him."
+  },
+  {
+    "session": 24,
+    "date": null,
+    "title": "Three Seconds Before Disaster",
+    "recap": "Vasili showed the party a stopwatch that could teleport anyone close to him if they needed to escape. They slipped past vampire spawn, destroyed an amber golem, and found Ezmerelda and other prisoners in the dungeon. Anastrasya and Volenta arrived, and Ireena revealed where the party was hiding after Anastrasya struck her with Power Word Pain.",
+    "location": "Castle Ravenloft passages and dungeon",
+    "npcs": ["Vasili", "Ezmerelda", "Perrywimple", "Ireena", "Anastrasya", "Volenta"],
+    "highlight": "The party's cover broke just as both consorts stood between them and the way out."
+  },
+  {
+    "session": 25,
+    "date": null,
+    "title": "Light in Sergei's Crypt",
+    "recap": "The party reached the crypts while Strahd battled the knights of Argynvostholt. Zarcharus got past Rahadin and placed the sword in Sergei's hand, where it began to charge. Rahadin fatally wounded Gurn, and the survivors escaped as vampire spawn poured from the walls.",
+    "location": "Ravenloft crypts",
+    "npcs": ["Strahd", "Rahadin", "Vladimir Horngaard", "The knights of Argynvostholt", "Sergei's remains"],
+    "highlight": "The sword began to charge in Sergei's hand while the party fought to get out."
+  },
+  {
+    "session": 26,
+    "date": null,
+    "title": "From a Robot Sheriff to a Siege",
+    "recap": "Korino introduced himself as a Dawngreeter of Lathander sent by Father Lucien. In Yellowwood, he pinned a mechanical sheriff with magic, and Zarcharus struck it down before it exploded. The party was swept into another land, where they met defenders facing an undead siege and Hrulek blew apart an ogre skeleton.",
+    "location": "Yellowwood and Castle Dragonhold, Falkovnia",
+    "npcs": ["The mechanical sheriff", "The Yellowwood bartender", "The defenders of Castle Dragonhold"],
+    "highlight": "Hrulek's critical hit blew apart the first ogre skeleton in a burst of fire and radiance."
+  },
+  {
+    "session": 27,
+    "date": null,
+    "title": "The Hunt Through the Jungle",
+    "recap": "After fighting on a foreign battlefield, the party was thrown into a jungle where Borke and his hunters pursued them. They fought through the hunt and landed among grapevines back in Barovia. They learned that three gems could help consecrate the fanes just as vines began closing around the house ahead.",
+    "location": "Falkovnia, Borke's jungle estate, and a Barovian vineyard",
+    "npcs": ["Borke", "The Huntress"],
+    "highlight": "The party escaped a jungle hunt only to find the vines moving towards them back in Barovia."
+  },
+  {
+    "session": 28,
+    "date": null,
+    "title": "A Gem in the Wine",
+    "recap": "The party fought off a druid and took shelter in the winery, where they learned the people inside were at war with the druids and Baba Yaga. They watched the vines close around the building and saw Strahd arrive on his flaming nightmare. Korino retrieved a gem from the wine and calmed it when it tried to pull away.",
+    "location": "The winery and vineyard",
+    "npcs": ["Luther", "Tara Nova", "Strahd", "The attacking druid"],
+    "highlight": "Korino dived into the wine to catch a gem that fought to get away."
+  },
+  {
+    "session": 29,
+    "date": null,
+    "title": "Threads in the Cauldron",
+    "recap": "The party fought off the druid and fled down roads hemmed in by vines. They learned that the gems held the gods' power and could consecrate the fanes, and that Madam Eva was the Weaver. They watched two women draw threads from a cauldron and read them like possible futures before choosing the road to the Vistani camp.",
+    "location": "The vineyard roads and the route to the Vistani camp",
+    "npcs": ["The attacking druid", "The Weaver", "The Seeker"],
+    "highlight": "The party saw possible futures read from threads drawn out of a cauldron."
+  },
+  {
+    "session": 30,
+    "date": null,
+    "title": "Something Followed the Gem",
+    "recap": "A boneclaw and two invisible mastiffs ambushed the party on the road, and the boneclaw tried to drag Korino away for his gem. The party fought it off and reached the Vistani camp after dark. There they heard that Rahadin had led reprisals in Barovia village, that Anastrasya had taken charge of Vallaki, and that Elliot was organising a rebellion.",
+    "location": "The road to the Vistani camp and the camp itself",
+    "npcs": ["The boneclaw", "The invisible mastiffs", "The Vistani hosts"],
+    "highlight": "The boneclaw burned to dust and smoke but warned the party it would be back."
+  }
+]

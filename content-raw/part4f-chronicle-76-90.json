@@ -1,0 +1,105 @@
+[
+  {
+    "session": 76,
+    "date": null,
+    "title": "Ashes at the Tomb",
+    "recap": "The party fought on at the ravine, where Hrulek impaled the likeness of his former master and decapitated Scrippy. Barridebs got away with Hrulek, and the party traced what remained of him into Vampyr's tomb. They slipped inside under cover of invisibility and saw Ludmilla standing over Hrulek while Vampyr rebuked Strahd.",
+    "location": "The ravine and Vampyr's tomb, Amber Temple",
+    "npcs": ["Hruket's likeness", "Barridebs", "Vaius", "Scrippy", "Godfrey", "Ludmilla", "Rahadin", "Strahd", "Vampyr"],
+    "highlight": "The party found Hrulek and heard Vampyr reprimand Strahd."
+  },
+  {
+    "session": 77,
+    "date": null,
+    "title": "Meteors and a Wedding Invitation",
+    "recap": "Zadkiel drove Ludmilla back with the Sunsword, but a Wall of Force blocked the party's retreat. A meteor strike killed Zadkiel and reduced Hrulek to ash. Strahd returned Zadkiel's body, offered a potion and a gold button to take the party home, and invited them to his wedding.",
+    "location": "Vampyr's tomb, Amber Temple",
+    "npcs": ["Strahd", "Ludmilla", "Rahadin", "Vampyr", "Ezmerelda"],
+    "highlight": "Strahd handed the survivors a wedding invitation after returning Zadkiel's body."
+  },
+  {
+    "session": 78,
+    "date": null,
+    "title": "Coffins and a Costly Card",
+    "recap": "The gold button brought the party back to Vallaki, where they woke in separate coffins. They went to Wachterhaus, where a Forcecage trapped Korino at the back entrance. Inside, Azza drew Ruin from a deck and lost his wealth and clothing, while Hrulek drew a card that made him stronger.",
+    "location": "The coffin maker's shop and Wachterhaus, Vallaki",
+    "npcs": ["The coffin maker", "Rudolf van Richten", "Ezmerelda", "Godfrey", "Leeroy"],
+    "highlight": "Azza drew one card and watched his jacket fall apart around him."
+  },
+  {
+    "session": 79,
+    "date": null,
+    "title": "The Brides in the Attic",
+    "recap": "The party searched Wachterhaus and found a rune-marked chest in an attic guarded by ghosts in wedding dresses. One possessed Zadkiel, and another brought Hrulek down before Zadkiel recovered and brought him back. Downstairs, a bonfire started in a bedroom, and the party fled the burning house for the town hall.",
+    "location": "Wachterhaus and Vallaki town hall",
+    "npcs": ["The spectral brides", "Elliot", "Rudolf van Richten"],
+    "highlight": "The party opened the attic chest after fighting off a room full of spectral brides."
+  },
+  {
+    "session": 80,
+    "date": null,
+    "title": "The Silver Knights Will Ride",
+    "recap": "Azza used Sending to contact Vladimir, who eventually pledged that the knights would ride. On the road out of Vallaki, Zadkiel urged a group of toll bandits to give up their trade. Farther along, the party found a wrecked cart carrying wedding gifts for Strahd.",
+    "location": "Vallaki and the road to Castle Ravenloft",
+    "npcs": ["Elliot", "Vladimir Horngaard", "Godfrey", "Ezmerelda", "Rudolf van Richten", "The toll bandits", "The Sanikovics' courier"],
+    "highlight": "Vladimir answered Azza's message with \"We will ride\"."
+  },
+  {
+    "session": 81,
+    "date": null,
+    "title": "Strahd Asked for a Best Man",
+    "recap": "Strahd visited the party on the road and handed out gifts, including a burned book of Lathander for Korino and a family portrait with Sergei's face scratched out for Zadkiel. He spoke privately with Zadkiel and asked him to be his best man. After Strahd left, Hrulek drew Flames from the deck and gained a devil as an enemy.",
+    "location": "Roadside camp on the way to Ravenloft",
+    "npcs": ["Strahd", "The woman in the black wedding gown"],
+    "highlight": "Strahd asked the man he called his brother to stand beside him at the wedding."
+  },
+  {
+    "session": 82,
+    "date": null,
+    "title": "Sergei Walked Into a Bar",
+    "recap": "Zadkiel returned to the pub inside the Sunsword and asked where Sergei was. The former wielders told him he was Sergei, and the bartender remembered opening the pub with him. Back at camp, a red portal stole Hrulek's bedroll and delivered a note, and the party learned the devil's name was Dissipater.",
+    "location": "The Sunsword Bar and Grill and the roadside camp",
+    "npcs": ["Gias", "Alec Gwillim", "Dissipater", "Godfrey", "Ezmerelda", "Rudolf van Richten"],
+    "highlight": "The pub went quiet when Zadkiel asked to meet Sergei."
+  },
+  {
+    "session": 83,
+    "date": null,
+    "title": "The Toll Was a Secret",
+    "recap": "The party passed ghostly wedding guests and stopped to help a crying child named Saphire. Zadkiel remembered proposing to Tatyana with his mother's ring. Farther up the road, a card player took secrets from losers, but Azza declined a final hand that might have told him about his father.",
+    "location": "Road to Castle Ravenloft",
+    "npcs": ["Saphire", "Tatyana (in a memory)", "The Vistani card player", "Ghostly wedding guests", "The girl at the crossroads"],
+    "highlight": "Korino won a question and passed it to Zadkiel, who used it to ask whether his armour had a hidden feature."
+  },
+  {
+    "session": 84,
+    "date": null,
+    "title": "Ropes From the Sky",
+    "recap": "The girl and wolfhounds at the crossroads turned out to be part of an ambush, and erinyes threw down ropes to catch Hrulek. A Bead of Force trapped him and Korino together until Hrulek dispelled it. Zadkiel brought down one attacker, and Korino counterspelled a Circle of Death while Hrulek broke the chains.",
+    "location": "Crossroads on the road to Castle Ravenloft",
+    "npcs": ["The hag child", "The disguised fiends", "The erinyes"],
+    "highlight": "Hrulek struck an erinys out of the air with a smite."
+  },
+  {
+    "session": 85,
+    "date": null,
+    "title": "The Gates Stood Open",
+    "recap": "The party drove off the remaining attackers after one demanded the return of a glaive they no longer had. They climbed the road to Ravenloft in the rain, and Zadkiel remembered walking it when the hills were green and the sun was out. At the unguarded gates, they saw Strahd waiting with an umbrella beside Ireena in a bright red dress.",
+    "location": "Road to Castle Ravenloft and the Ravenloft courtyard",
+    "npcs": ["The erinyes", "Ezmerelda", "Godfrey", "Alec Gwillim", "Strahd", "Ireena"],
+    "highlight": "The party reached Ravenloft to find its gates open and Strahd waiting in the rain."
+  },
+  { "session": 86, "date": null, "title": null, "recap": null, "location": null, "npcs": [], "highlight": null },
+  { "session": 87, "date": null, "title": null, "recap": null, "location": null, "npcs": [], "highlight": null },
+  { "session": 88, "date": null, "title": null, "recap": null, "location": null, "npcs": [], "highlight": null },
+  {
+    "session": 89,
+    "date": null,
+    "title": "The Final Supper",
+    "recap": "The party finished the Final Supper at Castle Ravenloft with their guest rights intact. After the meal, they were escorted back to their guest rooms.",
+    "location": "Castle Ravenloft",
+    "npcs": ["Strahd"],
+    "highlight": "The party made it through the Final Supper without breaking guest rights."
+  },
+  { "session": 90, "date": null, "title": null, "recap": null, "location": null, "npcs": [], "highlight": null }
+]

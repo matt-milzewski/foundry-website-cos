@@ -1,0 +1,137 @@
+[
+  {
+    "session": 61,
+    "date": null,
+    "title": "Fire at the Orphanage, a Noose at the Church",
+    "recap": "The party rushed into the burning orphanage and carried children out as the roof came down. At St. Andral's, they found armed men preparing to hang a priest, and Azza tried to talk them out of it. The assassin kicked away the stool, Zadkiel cut the rope, and Korino dragged the priest's limp body clear of the fight.",
+    "location": "The orphanage and St. Andral's Church, Vallaki",
+    "npcs": ["Elliot", "The priest at St. Andral's", "The assassin", "The mage"],
+    "highlight": "Korino shielded a child as the orphanage roof collapsed."
+  },
+  {
+    "session": 62,
+    "date": null,
+    "title": "A Republic and a Pair of Plate Boots",
+    "recap": "The party negotiated with Lady Fiona Wachter and secured her support and resources for an independent Vallaki led by Elliot. Zadkiel refused to sign the agreement, but Hrulek got the armour it promised him. Before leaving town, the party had Roger's body turned to stone in a final pose.",
+    "location": "Wachterhaus and Vallaki",
+    "npcs": ["Lady Fiona Wachter", "Elliot", "Godfrey"],
+    "highlight": "Hrulek got a new suit of plate written into the deal for Vallaki's independence."
+  },
+  {
+    "session": 63,
+    "date": null,
+    "title": "The Sunsword Bar and Grill",
+    "recap": "Zadkiel found himself in a pub inside the Sunsword, where former wielders welcomed him and Roger asked about Ezmerelda. Azza woke with a moon token, and Selûne restored his power after confronting him about his service. On the road, a warning came through as static just before vampire spawn dragged Godfrey off the path.",
+    "location": "The Sunsword Bar and Grill and the road to the Seeker's fane",
+    "npcs": ["Gias", "Orest Harner", "Selûne", "Godfrey", "Vampire spawn"],
+    "highlight": "Zadkiel walked into a pub full of dead Sunsword wielders and found Roger at the bar."
+  },
+  {
+    "session": 64,
+    "date": null,
+    "title": "The Wolf Beneath the Hill",
+    "recap": "The party fought off the spawn at the crossroads and repaired a broken cart for travellers. At the fog-covered hill, Strahd addressed Zadkiel as his brother and left with Rahadin. Volenta erupted from the earth as a giant werewolf, and Azza answered by becoming an enormous wererat.",
+    "location": "The crossroads and the approach to the Seeker's fane",
+    "npcs": ["Godfrey", "The Huntress", "Strahd", "Rahadin", "Volenta"],
+    "highlight": "A thirty-foot werewolf met a twenty-foot wererat at the foot of the hill."
+  },
+  {
+    "session": 65,
+    "date": null,
+    "title": "Mercy Ran Out",
+    "recap": "The party fought Volenta and her pack, and Korino survived a brutal set of attacks thanks to Death Ward and Jefferson's protection. Ludmilla appeared beside Zadkiel as the others gave chase, and Korino's attempt to negotiate gave way to another fight. The party badly wounded Ludmilla, but she teleported away.",
+    "location": "The hill below the Seeker's fane",
+    "npcs": ["Volenta", "Ludmilla", "Ezmerelda", "Jefferson"],
+    "highlight": "Three attacks tore open Korino's chest, but Death Ward and Jefferson kept him alive."
+  },
+  {
+    "session": 66,
+    "date": null,
+    "title": "No Truth Is Easy",
+    "recap": "The party confronted what had happened with Ludmilla and tried to push through the Seeker's fog by admitting truths they wished were false. Hrulek admitted that part of him was glad his master's death had given him a reason to grow stronger. The Seeker wrapped him in a cloak and drew him into the tree, which returned to life.",
+    "location": "The Seeker's fane",
+    "npcs": ["The Seeker", "Ezmerelda", "Godfrey"],
+    "highlight": "Hrulek's admission took him through the fog to the Seeker, who gave him a cloak that revealed creatures' strengths and weaknesses."
+  },
+  {
+    "session": 67,
+    "date": null,
+    "title": "Two Goats for the Mountain",
+    "recap": "The party returned to Vallaki for warm clothes, climbing gear, and supplies for the Amber Temple. They bought two goats to distract the mountain's giant birds and quickly found that Prepotente liked Hrulek while Bleatoncé took some wrangling from Zadkiel. With the goats in tow, they set out for Tsolenka Pass.",
+    "location": "Vallaki and the road to Tsolenka Pass",
+    "npcs": ["Elliot", "Lady Fiona Wachter", "Father Malovich", "Prepotente", "Bleatoncé"],
+    "highlight": "Zadkiel found out that the goat he was trying to wrangle was a fiend with a particular dislike of celestials."
+  },
+  {
+    "session": 68,
+    "date": null,
+    "title": "A Wall Across the Pass",
+    "recap": "Rahadin and Ludmilla attacked the party on the way to the pass, and the goats were caught up in the fighting. Ludmilla divided the field with a Wall of Force while Rahadin kept firing. Hrulek bolstered the party, and Korino hit Rahadin with silver and forced him to resist Synaptic Static.",
+    "location": "The approach to Tsolenka Pass",
+    "npcs": ["Rahadin", "Ludmilla", "Godfrey", "Prepotente", "Bleatoncé"],
+    "highlight": "Ludmilla split the battlefield with a Wall of Force while Rahadin fired across it."
+  },
+  {
+    "session": 69,
+    "date": null,
+    "title": "The Bridge Was a Lie",
+    "recap": "The party found a frozen traveller clutching a note about the Amber Lords. Two ghosts warned them that the bridge ahead was an illusion, and Hrulek confirmed it by testing the crossing with his glaive. Prepotente fell from the safer route, while Korino used a twinned Vortex Warp to save himself and Godfrey.",
+    "location": "Snowy ravine on Tsolenka Pass",
+    "npcs": ["Godfrey", "Two ghosts at the crossing", "Prepotente"],
+    "highlight": "Hrulek tested the bridge with his glaive and discovered the ghosts had been telling the truth."
+  },
+  {
+    "session": 70,
+    "date": null,
+    "title": "The Mountain Screamed",
+    "recap": "In a blizzard, the party approached what looked like a bird guarding an egg, then realised it was a distressed youngster. A much larger black creature they had mistaken for part of the mountain rose and attacked. The party brought two polymorphed tyrannosaurs into the fight, and Azza turned the young vrock so they could focus on the larger one.",
+    "location": "The mountain cliffs of Tsolenka Pass",
+    "npcs": ["Godfrey", "Ezmerelda", "The adult vrock", "The young vrock"],
+    "highlight": "The party realised the mountain had wings when the adult vrock screamed and blew snow across the cliffs."
+  },
+  {
+    "session": 71,
+    "date": null,
+    "title": "Tea Behind the Amber Doors",
+    "recap": "Hrulek charged the adult vrock on Trevor, and Zadkiel flew up to finish it with the Sunsword. The party climbed to the Amber Temple and passed through thick doors that opened without a touch. Inside, they met Vryin, who offered tea and warned them to keep their wits about them.",
+    "location": "Tsolenka Pass and the Amber Temple entrance",
+    "npcs": ["The adult vrock", "Trevor", "Rahadin", "Vryin"],
+    "highlight": "After a fight in a blizzard, the party stepped into the Amber Temple and was offered a cup of tea."
+  },
+  {
+    "session": 72,
+    "date": null,
+    "title": "The Price of a Unicorn",
+    "recap": "The party explored the temple's strange rooms and encountered mirrors that brought alternate versions of Azza into play. Korino broke the mirrors and lost a memory, but the Azza they were trying to recover did not return. Hrulek threw Azza at a shadow spear pinning a unicorn, freeing it but leaving Azza changed by the pain the spear carried.",
+    "location": "The Amber Temple's mirror chambers and unicorn cavern",
+    "npcs": ["Vryin", "The alternate Azzas", "The trapped unicorn"],
+    "highlight": "The unicorn was freed and vowed to protect Azza after seeing what the spear had done to him."
+  },
+  {
+    "session": 73,
+    "date": null,
+    "title": "A Wish in the Ashes",
+    "recap": "The party passed through a market where goods cost memories, joy, or years of life. Korino traded 36 years for the Time Stealer's Hourglass. Rahadin and Ludmilla ambushed them deeper inside, and when Ludmilla reduced Hrulek to dust despite Korino's counterspell, Korino used Wish.",
+    "location": "The Amber Temple's market and the approach to Vampyr's tomb",
+    "npcs": ["The ghostly merchants", "Rahadin", "Ludmilla", "A nosferatu"],
+    "highlight": "Korino said, \"I WISH to restore my party to their state from this dawn!\""
+  },
+  {
+    "session": 74,
+    "date": null,
+    "title": "The Black Dawn",
+    "recap": "Korino's wish brought him before a black sun, where Nhazul offered to answer it in exchange for Korino's service after death. Korino agreed, Hrulek reformed from ash as undead, and the darkness was carved out of Azza's soul. The party pressed on to a chamber where a figure resembling Hrulek's dead master urged him to serve Vampyr.",
+    "location": "Nhazul's black dawn and the approach to Vampyr's tomb",
+    "npcs": ["Nhazul", "Vryin", "Hruket's likeness", "Barridebs", "Vaius", "Scrippy"],
+    "highlight": "Hrulek came back from ash, then refused to join Vampyr when his former master's likeness asked him to."
+  },
+  {
+    "session": 75,
+    "date": null,
+    "title": "Over the Edge",
+    "recap": "The fight around Vampyr's tomb spilled across ledges and into the ravine. Azza healed himself through divine intervention and then helped the others, while Death Ward saved Korino after he was dropped off a cliff. Hrulek was thrown over the edge and burst into ash, and the Holy Symbol of Ravenkind held his attacker still for a turn.",
+    "location": "The ravine at Vampyr's tomb",
+    "npcs": ["Hruket's likeness", "Barridebs", "Vaius", "Scrippy", "The void eater", "Ezmerelda", "Godfrey"],
+    "highlight": "Ezmerelda hurled the void eater into the ravine after it became a potted plant."
+  }
+]

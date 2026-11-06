@@ -1,0 +1,137 @@
+[
+  {
+    "session": 46,
+    "date": null,
+    "title": "The Banana Boat",
+    "recap": "The party crossed the lake on a banana boat and fought undead that climbed aboard. Roger dived in to pull Ezmerelda back onto the deck. At Rudolf van Richten's tower, they got past his traps and found him in his lab, where Lucy touched a clockwork gem and vanished into it.",
+    "location": "The lake and Rudolf van Richten's tower",
+    "npcs": ["Ezmerelda", "Godfrey", "Rudolf van Richten"],
+    "highlight": "Lucy warned everyone away from the gem just before it sent her to the Feywild and left her cat behind."
+  },
+  {
+    "session": 47,
+    "date": null,
+    "title": "The Accountant in the Armour",
+    "recap": "The party took stock after Lucy's disappearance and learned that breaking Strahd's connection to Vampyr at the Amber Temple might make him killable. Rudolf offered gear, including a suit of half plate inhabited by an accountant named Jefferson. Hrulek shoved Azza onto a chest, which turned out to have teeth.",
+    "location": "Rudolf van Richten's laboratory",
+    "npcs": ["Rudolf van Richten", "Ezmerelda", "Jefferson"],
+    "highlight": "Azza picked a fight with the chest after it bit him."
+  },
+  {
+    "session": 48,
+    "date": null,
+    "title": "Two Tyrannosaurs in the Temple",
+    "recap": "The party travelled towards Mount Baratok, and Roger turned down an offer of power over ice or fire. Amber defenders dropped from the ceiling, and the party fought back with two polymorphed tyrannosaurs. Roger finished the last two defenders with his pistols, and the building started to shake.",
+    "location": "Amber ruin near Mount Baratok",
+    "npcs": ["Ezmerelda", "The amber defenders"],
+    "highlight": "Two tyrannosaurs gave the party enough room to bring down the amber defenders."
+  },
+  {
+    "session": 49,
+    "date": null,
+    "title": "A Deal on the Ledge",
+    "recap": "The party scrambled out of the collapsing ruin, and Ludmilla warned Azza that Strahd knew they were on Mount Baratok. Escher intercepted them on a narrow ledge and offered help finding Azlan in exchange for a favour at the Amber Temple. Hrulek attacked him over his master's death, and Escher teleported ahead to the prison.",
+    "location": "Mount Baratok and the entrance to Azlan's prison",
+    "npcs": ["Ludmilla", "Escher", "A hell hound", "A ghast", "A flesh golem"],
+    "highlight": "Hrulek charged through the prison doors straight into a fireball."
+  },
+  {
+    "session": 50,
+    "date": null,
+    "title": "The Prison Fed on Us",
+    "recap": "Faces in the prison walls sprayed bile, and the prison drained life from the living to heal its undead. Hrulek smote the lava golem's core, and Ezmerelda turned an enemy's immunity into a vulnerability with her curse. A fireball dropped Ezmerelda and nearly killed Roger before Hrulek cut down the Crimson Executioner.",
+    "location": "Azlan's prison, Mount Baratok",
+    "npcs": ["Ezmerelda", "The lava golem", "The Crimson Executioner"],
+    "highlight": "Hrulek's critical hit killed the Crimson Executioner as it tried to siphon the party's life."
+  },
+  {
+    "session": 51,
+    "date": null,
+    "title": "Strahd Took the Armour Back",
+    "recap": "The party fought through the prison, and Hrulek pulled Roger clear of the lava creature's jaws. They found the way towards Azlan's crypt just as Strahd swept in. Hrulek's plate flew off him and onto Strahd, leaving the party's frontliner without his armour.",
+    "location": "Azlan's prison, Mount Baratok",
+    "npcs": ["Strahd", "The lava creature"],
+    "highlight": "Hrulek's own armour flew across the room and fitted itself onto Strahd."
+  },
+  {
+    "session": 52,
+    "date": null,
+    "title": "The First Consort Fell",
+    "recap": "Hrulek used a potion of haste to reach Azlan and bring him back. Escher's fireball dropped Azza and Hrulek, but Azlan drove Strahd out of the mountain and fought him outside. Roger tore out Escher's throat with his werewolf fangs, and the party escaped as the Guardian crumbled.",
+    "location": "Azlan's prison and the slopes of Mount Baratok",
+    "npcs": ["Strahd", "Azlan", "Escher", "The Guardian"],
+    "highlight": "Roger killed Escher, the first of Strahd's consorts the party defeated."
+  },
+  {
+    "session": 53,
+    "date": null,
+    "title": "The Kettle Wanted a Promotion",
+    "recap": "At Rudolf's tower, the party learned that a physical link bound a dark god to its chosen and that breaking it could strip away immortality. They explored Rudolf's brewery and kitchen, where they met a talking kettle, and discussed a rabbit suit for Roger. By the end of the visit, they had agreed to go into Vallaki as a circus.",
+    "location": "Rudolf van Richten's tower",
+    "npcs": ["Rudolf van Richten", "Tiffany", "The talking kettle"],
+    "highlight": "The party met an abusive kettle whose ambition was to become a teapot."
+  },
+  {
+    "session": 54,
+    "date": null,
+    "title": "The Circus Came to Vallaki",
+    "recap": "The party disguised themselves as a travelling circus, brought their gear into Vallaki, and set up in the town square. They planned to draw in guards and wealthy spectators, with Elliot mapping an escape route. Two natural 20s helped fill the seats, and Anastrasya arrived with six courtiers just as the show was getting under way.",
+    "location": "Rudolf van Richten's tower and Vallaki town square",
+    "npcs": ["Rudolf van Richten", "Ezmerelda", "Elliot", "Anastrasya", "Anastrasya's courtiers"],
+    "highlight": "The circus filled its seats and drew a much more dangerous guest than the guards it was meant to attract."
+  },
+  {
+    "session": 55,
+    "date": null,
+    "title": "Blood Under the Big Top",
+    "recap": "The circus performance turned into a fight when Anastrasya hit the party with Circle of Death. They saw her necklace absorb radiant power, and a Wall of Fire severed a rope while Ezmerelda was still on it. Hrulek bloodied Anastrasya, but a pool of blood from a slain spawn rose into an elemental.",
+    "location": "The circus tent, Vallaki",
+    "npcs": ["Anastrasya", "Ezmerelda", "Anastrasya's courtiers", "The blood elemental"],
+    "highlight": "Ezmerelda rode the falling rope after a Wall of Fire cut it."
+  },
+  {
+    "session": 56,
+    "date": null,
+    "title": "One Hit Point and a Sunsword",
+    "recap": "The Sunsword shattered a ruby in Anastrasya's necklace, and she tried to flee the circus. Hrulek gave chase on Trevor, and Anastrasya challenged the party to meet her at the burgomaster's house before teleporting away. Back in the tent, Death Ward left Roger on one hit point, and he cut the blood elemental in two.",
+    "location": "The circus tent and surrounding streets, Vallaki",
+    "npcs": ["Anastrasya", "Ezmerelda", "Trevor", "The blood elemental"],
+    "highlight": "Roger ducked the elemental's blow on one hit point and split it with the Sunsword."
+  },
+  {
+    "session": 57,
+    "date": null,
+    "title": "The Mirrors Turned Us Around",
+    "recap": "The party pursued Anastrasya into the burgomaster's house and ran into vampire spawn, an amber golem, and a grey ooze. Enchanted mirrors turned the party's attacks against one another, but Circle of Power kept Hrulek from taking the damage. Ezmerelda broke two mirrors while Korino held the door.",
+    "location": "The burgomaster's mansion, Vallaki",
+    "npcs": ["Anastrasya", "Ezmerelda", "Jefferson", "The amber golem", "The grey ooze"],
+    "highlight": "Hrulek rolled two natural 20s, followed by two natural 1s from the amber golem."
+  },
+  {
+    "session": 58,
+    "date": null,
+    "title": "A Smite Through the Wall",
+    "recap": "Roger rushed Anastrasya with the Sunsword, and Hrulek channelled a divine smite through the blow. The strike dropped the Wall of Force and badly wounded her, but Roger then had to survive Disintegrate at close range. The party regrouped and followed her to the ballroom.",
+    "location": "The burgomaster's mansion, Vallaki",
+    "npcs": ["Anastrasya", "Ezmerelda", "The Crimson Courtier", "A figure who appeared to be Vasili"],
+    "highlight": "Roger's critical hit and Hrulek's smite brought down the Wall of Force in one strike."
+  },
+  {
+    "session": 59,
+    "date": null,
+    "title": "The Last Waltz",
+    "recap": "Anastrasya offered the party a chance to leave, and they stayed to fight. Fireballs repeatedly dropped Roger and Hrulek, while enchanted organ music forced Ezmerelda to dance until Azza helped her break free. As Anastrasya leaned in for the killing bite, Roger pulled her onto his blade, and they both collapsed.",
+    "location": "Ballroom of the burgomaster's mansion, Vallaki",
+    "npcs": ["Anastrasya", "Ezmerelda", "The Crimson Courtier", "The amber golem"],
+    "highlight": "Roger's last words to Anastrasya were \"I told you I was going to kill you\"."
+  },
+  {
+    "session": 60,
+    "date": null,
+    "title": "A Dawn in the Doorway",
+    "recap": "The party fled the mansion as vampire spawn poured out of the walls, only to find Strahd waiting outside. A beam of sunlight broke through, Zadkiel descended, and the Sunsword flew into his hand as Strahd scattered into bats. Elliot brought news of unrest across Vallaki, and the party chose to help the children trapped in the burning orphanage first.",
+    "location": "The burgomaster's mansion and surrounding streets, Vallaki",
+    "npcs": ["Strahd", "Ezmerelda", "Elliot", "Vampire spawn"],
+    "highlight": "Zadkiel descended into the light, took the Sunsword in hand, and said, \"BE NOT AFRAID\"."
+  }
+]

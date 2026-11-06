@@ -1,0 +1,111 @@
+[
+  {
+    "player": "Danny",
+    "characters": ["Zarcharus", "Roger Van Richten", "Dawnmaster Zadkiel"],
+    "best_quotes": [
+      "I told you I was going to kill you",
+      "BE NOT AFRAID",
+      "If your face is the last I see before I depart, I will die happy"
+    ],
+    "legendary_moment": "As Anastrasya leaned in for the killing bite, Roger pulled her onto his blade. They both collapsed, and the room went quiet.",
+    "legendary_session": 59,
+    "funniest_moment": "Zadkiel used the question Korino won from a card hustler to ask whether his armour had a hidden feature. It apparently didn't, and Hrulek joked that Zadkiel had scammed the party too.",
+    "signature_move": "Put himself between the party and the threat, usually with a blade already drawn.",
+    "worst_decision": "Roger dove at Anastrasya, missed both shots, and went down to Chill Touch within biting distance.",
+    "running_jokes": ["Roger looking like Danny DeVito in his circus outfit", "Zadkiel yelling at Azza not to eat people"],
+    "award": "Most Likely to Make His Last Words a Promise Kept",
+    "deaths": 3,
+    "nat20_moments": ["Session 54: Danny and Fraser both rolled natural 20s to draw the circus crowd in and fill the seats."]
+  },
+  {
+    "player": "Fraser",
+    "characters": ["Zarr Da Gar", "Hrulek Surprise"],
+    "best_quotes": [
+      "Image of my master, he would never have me join Vampyr and join this filth",
+      "I can go all day",
+      "We interact with a scammer, and Zadkiel ends up scamming us. Didn't see that coming"
+    ],
+    "legendary_moment": "Seconds after Korino got him back on his feet, Hrulek landed back-to-back critical hits on a courtier, dropped him from full health, and burned an H into him.",
+    "legendary_session": 59,
+    "funniest_moment": "Hrulek summoned Trevor, a war camel, after the party finished fighting a group of trees.",
+    "signature_move": "Charge into melee and spend a smite when the hit lands.",
+    "worst_decision": "Hrulek tried to use a potion he'd stolen from Strahd at the start of a fight. It was a mimic.",
+    "running_jokes": ["Trevor the war camel", "Hrulek turning into ash and getting back up again"],
+    "award": "Most Likely to Smite First and Check the Potion Label Later",
+    "deaths": null,
+    "nat20_moments": [
+      "Session 54: Fraser and Danny both rolled natural 20s to fill the circus seats.",
+      "Session 57: Hrulek rolled two natural 20s while the amber golem followed with two natural 1s."
+    ]
+  },
+  {
+    "player": "Ryan",
+    "characters": ["Azza"],
+    "best_quotes": [
+      "I can eat people if they're dead? Not the hearts though",
+      "Look on the bright side, One consort dead, we did it together. May have made an enemy, but still, 1 on the score board.",
+      "No one deserves what has happened to my soul"
+    ],
+    "legendary_moment": "During Anastrasya's fight, Azza spotted her through her invisibility, rescued Ezmerelda from the enchanted dance, and got Hrulek back up with Healing Word.",
+    "legendary_session": 59,
+    "funniest_moment": "Azza told the party about a brewery raid that ended with flying wood, splinters in someone's backside, and nearby houses and fields on fire. He described it as controlled demolition.",
+    "signature_move": "Use cleric magic to pull the party out of trouble, then make a remark that starts another argument.",
+    "worst_decision": "Azza nearly died trying to steal greater healing potions while Fluffy was eating.",
+    "running_jokes": ["Azza's rules about which parts of a corpse are edible", "Azza and Zadkiel arguing over whether eating a dead dwarf counts"],
+    "award": "Most Likely to Save Your Life and Insult You in the Same Round",
+    "deaths": 0,
+    "nat20_moments": ["Session 69: Azza rolled a natural 20 to spot a bloodstained Rahadin, who waved back and readied his bow."]
+  },
+  {
+    "player": "Stefan",
+    "characters": ["Gurn Ga Dar", "Korino Kadajin"],
+    "best_quotes": [
+      "me hope you can say same, Strahd",
+      "I WISH to restore my party to their state from this dawn!",
+      "You shall if you serve me!"
+    ],
+    "legendary_moment": "Korino's wish brought him before Nhazul. He pledged his soul after death, and the party watched Hrulek reform from ash.",
+    "legendary_session": 74,
+    "funniest_moment": "Gurn wondered why one of his sling stones was getting bigger. It hatched into Tuulikki.",
+    "signature_move": "Use a spell to get someone out of immediate danger, even when it costs him something.",
+    "worst_decision": "Gurn killed Ella at Old Bonegrinder as part of his bargain with DealsInLuck.",
+    "running_jokes": ["Gurn's rock collection", "Jefferson turning Korino's armour into a conversation with an accountant"],
+    "award": "Most Likely to Make a Wish the Gods Actually Hear",
+    "deaths": 1,
+    "nat20_moments": [
+      "Session 34: Korino rolled a natural 20 to get back up, then crawled to the fane beneath Baba Yaga and saved it.",
+      "Session 39: Korino rolled a natural 20 while sapping the Abbot's strength."
+    ]
+  },
+  {
+    "player": "Natasha",
+    "characters": ["Lucy"],
+    "best_quotes": ["don't touch this, unless you like fey fuckers"],
+    "legendary_moment": "Lucy took the blast herself to stop Argynvost's soul from being torn out of the Sunsword. The blast threw her into a wall and left spectral scales across her.",
+    "legendary_session": 38,
+    "funniest_moment": "The party learned that the cat riding in Lucy's hood was named Spaghetti Bolognese on the Floor.",
+    "signature_move": "Reach for the Sunsword, including using Misty Step to snatch it back from Roger.",
+    "worst_decision": "Lucy touched Rudolf van Richten's clockwork gem and vanished into it, leaving her cat behind.",
+    "running_jokes": [],
+    "award": "Most Likely to Say Don't Touch It While Touching It",
+    "deaths": 0,
+    "nat20_moments": []
+  },
+  {
+    "player": "Sharn",
+    "characters": ["Vryin"],
+    "best_quotes": [
+      "You shouldn't be back here",
+      "If you save this Unicorn, maybe Lathander would notice you"
+    ],
+    "legendary_moment": "Vryin offered the party tea at the Amber Temple and warned them that its visions could exploit their insecurities.",
+    "legendary_session": 71,
+    "funniest_moment": "Vryin reckoned the party would kill Strahd before anyone managed to teach Azza manners.",
+    "signature_move": "Give a practical warning about what was behind the next door.",
+    "worst_decision": null,
+    "running_jokes": [],
+    "award": "Most Likely to Put the Kettle On in the Amber Temple",
+    "deaths": 0,
+    "nat20_moments": []
+  }
+]
