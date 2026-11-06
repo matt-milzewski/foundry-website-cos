@@ -4,9 +4,9 @@
 #     --template-file infra/github-oidc.yaml --capabilities CAPABILITY_NAMED_IAM
 # If your account already has a GitHub OIDC provider, add:
 #   --parameter-overrides ExistingProviderArn=arn:aws:iam::622842579488:oidc-provider/token.actions.githubusercontent.com
-# Then in .github/workflows/deploy.yaml swap the two key lines for:
-#   role-to-assume: <RoleArn output>
-# add "id-token: write" under permissions, and delete the old key secrets.
+# The workflow (.github/workflows/deploy.yaml) already uses this role:
+#   arn:aws:iam::622842579488:role/natural20tavern-deploy
+# Afterwards the old AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY repo secrets can be deleted.
 
 AWSTemplateFormatVersion: "2010-09-09"
 Description: GitHub OIDC deploy role for thenatural20tavern.com
