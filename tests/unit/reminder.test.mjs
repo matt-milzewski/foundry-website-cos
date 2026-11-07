@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { summarise, decide, composeEmail, joinNames } from "../../backend/reminder/logic.mjs";
+import { summarise, decide, composeEmail, joinNames, nudgeDue, composeNudge } from "../../backend/reminder/logic.mjs";
 import { createReminder } from "../../backend/reminder/index.mjs";
 
 const players = ["Danny", "Fraser", "Ryan", "Stefan"];
@@ -8,6 +8,7 @@ const start = new Date("2026-11-11T09:00:00Z"); // Wednesday 7:00 pm QLD
 const at = (iso) => new Date(iso);
 const times = { day: "Wednesday 11 Nov", qld: "7:00 pm", vic: "8:00 pm" };
 const site = "https://thenatural20tavern.com";
+const H = 3600e3;
 
 const partial = summarise(players, { Danny: "yes", Fraser: "yes", Ryan: "no" });
 const full = summarise(players, { Danny: "yes", Fraser: "yes", Ryan: "no", Stefan: "yes" });
@@ -85,7 +86,69 @@ test("names are escaped in the HTML", () => {
   assert.match(html, /&lt;b&gt;x&lt;\/b&gt;/);
 });
 
-// ---- the hourly job, with fake storage and a fake sender ----
+// ---- player reminders ----
+
+test("normal week: first nudge 24 hours after the date goes live, second 48 hours before", () => {
+  const S = at("2026-11-16T10:00:00Z"); // Monday 8 pm QLD
+  const liveAt = at("2026-11-09T10:05:20Z"); // last Monday's game started, picked up by the 8:05 pm run
+  const due = (now, sent) => nudgeDue({ start: S, liveAt, now: at(now), sent });
+  assert.equal(due("2026-11-10T09:05:00Z"), null); // Tue 7:05 pm QLD
+  assert.equal(due("2026-11-10T10:05:10Z"), "first"); // Tue 8:05 pm QLD, a few seconds early is fine
+  const sent = { first: "2026-11-10T10:05:12Z" };
+  assert.equal(due("2026-11-12T10:05:00Z", sent), null);
+  assert.equal(due("2026-11-14T09:05:00Z", sent), null); // Sat 7:05 pm QLD
+  assert.equal(due("2026-11-14T10:05:00Z", sent), "second"); // Sat 8:05 pm QLD
+  assert.equal(due("2026-11-15T10:05:00Z", { ...sent, second: "2026-11-14T10:05:03Z" }), null);
+  assert.equal(due("2026-11-16T10:00:00Z", sent), null); // game has started
+});
+
+test("short notice: one nudge 24 hours before, or straight away if it's sooner", () => {
+  const S = at("2026-11-12T09:00:00Z");
+  const due = (liveAt, now, sent) => nudgeDue({ start: S, liveAt: at(liveAt), now: at(now), sent });
+  // goes live 40 hours ahead
+  assert.equal(due("2026-11-10T17:00:00Z", "2026-11-10T18:05:00Z"), null);
+  assert.equal(due("2026-11-10T17:00:00Z", "2026-11-11T09:05:00Z"), "first");
+  assert.equal(due("2026-11-10T17:00:00Z", "2026-11-12T08:05:00Z", { first: "2026-11-11T09:05:00Z" }), null);
+  // goes live 10 hours ahead
+  assert.equal(due("2026-11-11T23:00:00Z", "2026-11-11T23:05:00Z"), "first");
+});
+
+test("in between: the second nudge is dropped if it would land within 24 hours of the first", () => {
+  const nudges = (hoursAhead) => {
+    const liveAt = at("2026-11-01T00:00:00Z");
+    const S = new Date(liveAt.getTime() + hoursAhead * H);
+    const sent = {};
+    const out = [];
+    for (let t = liveAt.getTime(); t < S.getTime(); t += H) {
+      const kind = nudgeDue({ start: S, liveAt, now: new Date(t), sent });
+      if (kind) {
+        sent[kind] = new Date(t).toISOString();
+        out.push(`${kind}@${(S.getTime() - t) / H}h before`);
+      }
+    }
+    return out;
+  };
+  assert.deepEqual(nudges(60), ["first@36h before"]);
+  assert.deepEqual(nudges(80), ["first@56h before"]);
+  assert.deepEqual(nudges(100), ["first@76h before", "second@48h before"]);
+  assert.deepEqual(nudges(168), ["first@144h before", "second@48h before"]);
+  assert.deepEqual(nudges(30), ["first@24h before"]);
+});
+
+test("the player email says what's needed and how to answer", () => {
+  const { subject, text, html } = composeNudge({ name: "Ryan", times, siteUrl: site });
+  assert.equal(subject, "Are you in for Wednesday 11 Nov?");
+  for (const body of [text, html]) {
+    assert.match(body, /Hi Ryan/);
+    assert.match(body, /7:00 pm QLD · 8:00 pm VIC/);
+    assert.match(body, /https:\/\/thenatural20tavern\.com\/#next/);
+    assert.match(body, /stop as soon as you answer/);
+  }
+  assert.equal(composeNudge({ name: "Ryan", times, siteUrl: site, test: true }).subject, "[Test] Are you in for Wednesday 11 Nov?");
+  assert.match(composeNudge({ name: "<i>", times, siteUrl: site }).html, /Hi &lt;i&gt;/);
+});
+
+// ---- the hourly job, with fake storage and fake senders ----
 
 const schedule = {
   timezone: "Australia/Brisbane",
@@ -94,19 +157,25 @@ const schedule = {
   cancelled: ["2026-11-09"],
   players,
 };
+const mondays = { timezone: "Australia/Brisbane", regular: { weekday: 1, time: "20:00" }, overrides: [], cancelled: [], players };
 
 function fakeStore(answers) {
   const state = {};
+  const of = (date) => (state[date] ||= {});
   return {
     state,
     async getAnswers() {
       return answers;
     },
     async getState(date) {
-      return { ...state[date] };
+      const s = state[date] || {};
+      return { first: s.first, final: Boolean(s.final), liveAt: s.liveAt, nudges: structuredClone(s.nudges || {}) };
+    },
+    async markLive(date, when) {
+      return (of(date).liveAt ||= when);
     },
     async claim(date, kind) {
-      const s = (state[date] ||= {});
+      const s = of(date);
       if (kind === "final") {
         if (s.first !== "48h" || s.final) return false;
         s.final = true;
@@ -120,21 +189,80 @@ function fakeStore(answers) {
       if (kind === "final") delete state[date].final;
       else delete state[date].first;
     },
+    async claimNudge(date, name, kind, when) {
+      const n = ((of(date).nudges ||= {})[name] ||= {});
+      if (n[kind]) return false;
+      n[kind] = when.toISOString();
+      return true;
+    },
+    async releaseNudge(date, name, kind) {
+      delete state[date].nudges[name][kind];
+    },
   };
 }
 
-function job({ answers = {}, now, store = fakeStore(answers), send }) {
+function job({ answers = {}, now, contacts = {}, store = fakeStore(answers), send, sendPlayer, sched = schedule, remindersFrom }) {
   const emails = [];
+  const playerEmails = [];
   const clock = { now: at(now) };
   const run = createReminder({
-    loadSchedule: async () => schedule,
+    loadSchedule: async () => sched,
+    loadContacts: async () => contacts,
     store,
     send: send || (async (e) => emails.push(e)),
+    sendPlayer: sendPlayer || (async (to, e) => playerEmails.push({ to, ...e })),
     now: () => clock.now,
     siteUrl: site,
+    remindersFrom,
   });
-  return { run, emails, store, clock };
+  return { run, emails, playerEmails, store, clock };
 }
+
+test("no emails at all for Wednesday's game; Monday's go as planned", async () => {
+  const { run, emails, playerEmails, clock } = job({ contacts: { Danny: "danny@example.com" }, remindersFrom: "2026-11-16", now: "2026-11-07T01:05:00Z" });
+  for (let t = at("2026-11-07T01:05:00Z").getTime(); t < at("2026-11-16T10:00:00Z").getTime(); t += H) {
+    clock.now = new Date(t);
+    await run({});
+  }
+  assert.deepEqual(playerEmails.map((e) => e.subject), ["Are you in for Monday 16 Nov?", "Are you in for Monday 16 Nov?"]);
+  assert.deepEqual(emails.map((e) => e.subject), ["Monday 16 Nov: no replies yet"]);
+});
+
+test("even if everyone replies for Wednesday, Matt gets nothing before the start date", async () => {
+  const answers = { Danny: "yes", Fraser: "yes", Ryan: "yes", Stefan: "yes" };
+  const { run, emails } = job({ answers, remindersFrom: "2026-11-16", now: "2026-11-08T00:05:00Z" });
+  assert.deepEqual(await run({}), { sent: null, session: "2026-11-11", reason: "emails start from 2026-11-16" });
+  assert.equal(emails.length, 0);
+});
+
+test("preview shows what's set up and sends nothing", async () => {
+  const { run, emails, playerEmails, store } = job({ contacts: { Danny: "danny@example.com" }, remindersFrom: "2026-11-16", now: "2026-11-07T01:05:00Z" });
+  assert.deepEqual(await run({ preview: true }), {
+    preview: true,
+    session: "2026-11-11",
+    emailsOn: false,
+    playersWithEmail: ["Danny"],
+    summarySubject: "Wednesday 11 Nov: no replies yet",
+    playerSubject: "Are you in for Wednesday 11 Nov?",
+  });
+  assert.equal(emails.length + playerEmails.length, 0);
+  assert.equal(store.state["2026-11-11"], undefined);
+});
+
+test("player reminder timing for Monday 16 Nov after Wednesday's game: Thursday then Saturday", async () => {
+  const sentAt = [];
+  const { run, clock } = job({
+    contacts: { Danny: "danny@example.com" },
+    remindersFrom: "2026-11-16",
+    now: "2026-11-07T01:05:00Z",
+    sendPlayer: async () => sentAt.push(clock.now.toISOString()),
+  });
+  for (let t = at("2026-11-07T01:05:00Z").getTime(); t < at("2026-11-16T10:00:00Z").getTime(); t += H) {
+    clock.now = new Date(t);
+    await run({});
+  }
+  assert.deepEqual(sentAt, ["2026-11-12T09:05:00.000Z", "2026-11-14T10:05:00.000Z"]); // Thu 7:05 pm, Sat 8:05 pm QLD
+});
 
 test("the job emails once at the 48-hour mark", async () => {
   const { run, emails } = job({ answers: { Danny: "yes" }, now: "2026-11-09T09:05:00Z" });
@@ -184,7 +312,7 @@ test("a lost race sends nothing, and a failed send is retried next run", async (
     },
   });
   await assert.rejects(b.run({}), /SES down/);
-  assert.deepEqual(b.store.state["2026-11-11"], {});
+  assert.equal(b.store.state["2026-11-11"].first, undefined);
   fail = false;
   assert.equal((await b.run({})).sent, "48h");
   assert.equal(sent.length, 1);
@@ -195,4 +323,67 @@ test("test mode sends a [Test] email straight away without recording it", async 
   assert.deepEqual(await run({ test: true }), { sent: "test", session: "2026-11-11" });
   assert.match(emails[0].subject, /^\[Test\] Wednesday 11 Nov: 1 out, 3 no reply$/);
   assert.equal(store.state["2026-11-11"], undefined);
+});
+
+test("a normal week nudges a player who hasn't answered on Tuesday and Saturday, and no one else", async () => {
+  const answers = { Fraser: "yes" };
+  const contacts = { Danny: "danny@example.com", Fraser: "fraser@example.com" };
+  const { run, playerEmails, emails, clock } = job({ answers, contacts, sched: mondays, now: "2026-11-09T10:05:20Z" });
+  const runAt = async (iso) => {
+    clock.now = at(iso);
+    return run({});
+  };
+  assert.deepEqual(await runAt("2026-11-09T10:05:20Z"), { sent: null, session: "2026-11-16" }); // Mon 8:05 pm: goes live
+  assert.deepEqual(await runAt("2026-11-10T09:05:00Z"), { sent: null, session: "2026-11-16" });
+  assert.deepEqual(await runAt("2026-11-10T10:05:10Z"), { sent: null, session: "2026-11-16", nudged: ["Danny:first"] }); // Tue 8:05 pm
+  assert.deepEqual(await runAt("2026-11-12T10:05:00Z"), { sent: null, session: "2026-11-16" });
+  assert.deepEqual(await runAt("2026-11-14T10:05:00Z"), { sent: "48h", session: "2026-11-16", nudged: ["Danny:second"] }); // Sat 8:05 pm
+  assert.deepEqual(await runAt("2026-11-15T10:05:00Z"), { sent: null, session: "2026-11-16" });
+  assert.deepEqual(playerEmails.map((e) => [e.to, e.subject]), [
+    ["danny@example.com", "Are you in for Monday 16 Nov?"],
+    ["danny@example.com", "Are you in for Monday 16 Nov?"],
+  ]);
+  assert.equal(emails.length, 1);
+});
+
+test("a player who answers after the first nudge gets no second one", async () => {
+  const answers = {};
+  const { run, playerEmails, clock } = job({ answers, contacts: { Ryan: "ryan@example.com" }, sched: mondays, now: "2026-11-09T10:05:00Z" });
+  await run({});
+  clock.now = at("2026-11-10T10:05:00Z");
+  assert.deepEqual((await run({})).nudged, ["Ryan:first"]);
+  answers.Ryan = "no";
+  clock.now = at("2026-11-14T10:05:00Z");
+  assert.equal((await run({})).nudged, undefined);
+  assert.equal(playerEmails.length, 1);
+});
+
+test("a failed player email is retried next run without blocking the others", async () => {
+  let fail = true;
+  const delivered = [];
+  const { run, clock } = job({
+    contacts: { Danny: "danny@example.com", Ryan: "ryan@example.com" },
+    sched: mondays,
+    now: "2026-11-09T10:05:00Z",
+    sendPlayer: async (to) => {
+      if (fail && to === "danny@example.com") throw new Error("bounce");
+      delivered.push(to);
+    },
+  });
+  await run({});
+  clock.now = at("2026-11-10T10:05:00Z");
+  await assert.rejects(run({}), /bounce/);
+  assert.deepEqual(delivered, ["ryan@example.com"]);
+  fail = false;
+  clock.now = at("2026-11-10T11:05:00Z");
+  assert.deepEqual((await run({})).nudged, ["Danny:first"]);
+  assert.deepEqual(delivered, ["ryan@example.com", "danny@example.com"]);
+});
+
+test("player test mode sends a sample nudge to Matt, never to the player", async () => {
+  const { run, emails, playerEmails } = job({ contacts: { Danny: "danny@example.com" }, now: "2026-11-07T00:00:00Z" });
+  assert.deepEqual(await run({ test: "player", player: "Danny" }), { sent: "test-player", session: "2026-11-11" });
+  assert.equal(playerEmails.length, 0);
+  assert.equal(emails[0].subject, "[Test] Are you in for Wednesday 11 Nov?");
+  assert.match(emails[0].text, /Hi Danny/);
 });

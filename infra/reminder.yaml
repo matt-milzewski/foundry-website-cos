@@ -15,6 +15,11 @@ Parameters:
   TableName:
     Type: String
     Default: TavernCalendar
+  RemindersFrom:
+    Type: String
+    Default: ""
+    AllowedPattern: "^(\\d{4}-\\d{2}-\\d{2})?$"
+    Description: YYYY-MM-DD. No reminder emails (to Matt or players) for sessions before this date. Blank means no limit.
 
 Resources:
   # Lets SES send as @thenatural20tavern.com, signed with DKIM so it doesn't land in spam.
@@ -94,6 +99,16 @@ Resources:
                 Condition:
                   StringEquals:
                     ses:FromAddress: reminders@thenatural20tavern.com
+              # Players' email addresses, stored outside the public repo (see backend/reminder/aws.mjs).
+              - Effect: Allow
+                Action: ssm:GetParameter
+                Resource: !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/natural20tavern/player-emails
+              - Effect: Allow
+                Action: kms:Decrypt
+                Resource: "*"
+                Condition:
+                  StringEquals:
+                    kms:ViaService: !Sub ssm.${AWS::Region}.amazonaws.com
       Tags: [{ Key: Project, Value: natural20tavern }]
 
   Function:
@@ -117,6 +132,8 @@ Resources:
           TABLE: !Ref TableName
           FROM: Natural 20 Tavern <reminders@thenatural20tavern.com>
           TO: !Ref RecipientEmail
+          CONTACTS_PARAM: /natural20tavern/player-emails
+          REMINDERS_FROM: !Ref RemindersFrom
       Tags: [{ Key: Project, Value: natural20tavern }]
 
   # 5 minutes past every hour.
