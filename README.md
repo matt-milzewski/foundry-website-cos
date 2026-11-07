@@ -32,6 +32,8 @@ npm run e2e          # page tests at phone, tablet and desktop widths
   - Runs hourly and reads `/schedule.json` from the live site.
   - Emails Matt who's coming once everyone has replied, or 48 hours before the session if that comes first.
   - If replies were still missing at 48 hours, sends one more email when the last one lands.
+  - Also reminds players who haven't answered: 24 hours after the session goes live, and again 48 hours before (one reminder if it's booked at short notice). Their addresses are in the SSM SecureString `/natural20tavern/player-emails` (a JSON map of first name to email), never in this repo.
+  - `{"preview": true}` shows what's set up without sending anything.
   - After changing code under `backend/reminder` or `src/assets/js/lib/schedule.js`, run `powershell -ExecutionPolicy Bypass -File scripts/deploy-reminder.ps1`.
   - To send a test email now, invoke it with `{"test": true}`:
     ```bash

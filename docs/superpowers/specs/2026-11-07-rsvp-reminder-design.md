@@ -71,3 +71,34 @@ About 720 Lambda runs a month and a handful of emails, all within free tiers.
   - the handler with fake storage and sender: duplicates, claim races and send failures
 - A page test checks that `/schedule.json` is published.
 - After deploy, a real test email is sent to Matt.
+
+## Player reminders
+
+Added on 2026-11-07 at Matt's request.
+
+Players who haven't tapped 👍 or 👎 get a reminder email. Anyone who has answered gets nothing.
+
+**Timing.** A session "goes live" when the job first sees it as the next session. That happens when the previous game starts, or after a schedule change.
+
+- **Goes live more than 48 hours ahead:**
+  - first reminder 24 hours after it goes live
+  - second reminder 48 hours before the game, unless that would land within 24 hours of the first
+- **Goes live 48 hours or less ahead:** one reminder 24 hours before the game, or straight away if that time has passed.
+- **A normal Monday week:**
+  - Monday 8 pm QLD: the game starts and next Monday goes live
+  - Tuesday about 8 pm QLD: first reminder
+  - Saturday about 8 pm QLD: second reminder, at the same time as Matt's 48-hour summary
+
+**The email:**
+- **From:** Natural 20 Tavern, with Reply-To set to Matt
+- **Subject:** "Are you in for Monday 16 Nov?"
+- **Body:** both times, a link to the buttons, and a note that the reminders stop once they answer
+
+**Storage.**
+- Addresses live in the SSM SecureString `/natural20tavern/player-emails` as a JSON map like `{"Danny": "..."}`. They are never in this repo or on the site.
+- To add or change someone, overwrite the parameter.
+- Players without an address are skipped.
+
+**Start date.** The `RemindersFrom` stack parameter (`REMINDERS_FROM`) turns off all reminder emails, to Matt and to players, for sessions before that date. It's set to 2026-11-16, so Wednesday 11 Nov gets no emails. The `reminder#2026-11-11` item is also marked `firstEmail: "skipped"`.
+
+**Preview.** `{"preview": true}` reports the next session, whether emails are on, who has an address, and sample subjects. It sends nothing.
